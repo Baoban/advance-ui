@@ -9,12 +9,7 @@
 
 .time-select .el-picker-panel__content {
   max-height: 200px;
-  overflow: hidden;
   margin: 0;
-
-  &:hover {
-    overflow-y: auto;
-  }
 }
 
 .time-select-item {
@@ -24,10 +19,10 @@
 
 .time-select-item.selected:not(.disabled) {
   background-color: var(--datepicker-active-color);
-  color: #fff;
+  color: var(--color-white);
 
   &:hover {
-    background-color: #1d8ce0;
+    background-color: var(--color-primary);
   }
 }
 
