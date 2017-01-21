@@ -1,16 +1,7 @@
 {
   "name": "element-select",
-  "version": "1.0.1",
-  "description": "A el-select component for Vue.",
-  "main": "lib/index.js",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
-  "author": "qingwei.li<qingwei.li@ele.me>",
-  "license": "MIT",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/select",
+  "private": true,
+  "main": "./lib/index.js",
   "devDependencies": {
     "throttle-debounce": "^1.0.1"
   }
