@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  import Popup from 'element-ui/src/utils/popup';
+  import Popup from 'advance-ui/src/utils/popup';
 
   export default {
     name: 'ElDialog',

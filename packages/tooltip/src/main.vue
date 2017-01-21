@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Popper from 'element-ui/src/utils/vue-popper';
+import Popper from 'advance-ui/src/utils/vue-popper';
 
 export default {
   name: 'ElTooltip',

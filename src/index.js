@@ -60,7 +60,7 @@ import Scrollbar from '../packages/scrollbar';
 import CarouselItem from '../packages/carousel-item';
 import Collapse from '../packages/collapse';
 import CollapseItem from '../packages/collapse-item';
-import locale from 'element-ui/src/locale';
+import locale from 'advance-ui/src/locale';
 
 const components = [
   Pagination,
@@ -148,7 +148,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 };
 
 module.exports = {
-  version: '1.1.3',
+  version: '1.1.4',
   locale: locale.use,
   i18n: locale.i18n,
   install,

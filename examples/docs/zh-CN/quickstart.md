@@ -44,7 +44,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "element-ui": "^1.0.0",
+    "advance-ui": "^1.0.0",
     "vue": "^2.1.6"
   },
   "devDependencies": {
@@ -138,8 +138,8 @@ if (process.env.NODE_ENV === 'production') {
 在 main.js 中写入以下内容：
 ```javascript
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-ai/index.css'
+import ElementUI from 'advance-ui'
+import 'advance-ui/lib/theme-ai/index.css'
 import App from './App.vue'
 
 Vue.use(ElementUI)
@@ -169,7 +169,7 @@ npm install babel-plugin-component -D
   ],
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "advance-ui",
       "styleLibraryName": "theme-ai"
     }
   ]]]
@@ -180,7 +180,7 @@ npm install babel-plugin-component -D
 
 ```javascript
 import Vue from 'vue'
-import { Button, Select } from 'element-ui'
+import { Button, Select } from 'advance-ui'
 import App from './App.vue'
 
 Vue.component(Button.name, Button)

@@ -55,7 +55,7 @@
 
 <script type="text/babel">
   import { getRangeHours } from '../util';
-  import ElScrollbar from 'element-ui/packages/scrollbar';
+  import ElScrollbar from 'advance-ui/packages/scrollbar';
 
   export default {
     components: { ElScrollbar },

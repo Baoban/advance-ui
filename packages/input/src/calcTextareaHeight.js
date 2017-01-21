@@ -1,4 +1,4 @@
-import merge from 'element-ui/src/utils/merge';
+import merge from 'advance-ui/src/utils/merge';
 
 let hiddenTextarea;
 

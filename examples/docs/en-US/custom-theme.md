@@ -64,7 +64,7 @@ By default the build theme file is placed inside `./theme`. You can specify its 
 
 ```javascript
 import '../theme/index.css'
-import ElementUI from 'element-ui'
+import ElementUI from 'advance-ui'
 import Vue from 'vue'
 
 Vue.use(ElementUI)
@@ -76,7 +76,7 @@ If you are using `babel-plugin-component` for on-demand import, just modify `.ba
 {
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "advance-ui",
       "styleLibraryName": "~theme"
     }
   ]]]

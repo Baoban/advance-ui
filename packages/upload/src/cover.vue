@@ -32,8 +32,8 @@
   </div>
 </template>
 <script>
-  import Locale from 'element-ui/src/mixins/locale';
-  import ElProgress from 'element-ui/packages/progress';
+  import Locale from 'advance-ui/src/mixins/locale';
+  import ElProgress from 'advance-ui/packages/progress';
 
   export default {
     mixins: [Locale],

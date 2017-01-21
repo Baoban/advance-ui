@@ -26,11 +26,11 @@
 
 <script>
 import Vue from 'vue';
-import Clickoutside from 'element-ui/src/utils/clickoutside';
+import Clickoutside from 'advance-ui/src/utils/clickoutside';
 import { formatDate, parseDate, getWeekNumber, equalDate, isDate } from './util';
-import Popper from 'element-ui/src/utils/vue-popper';
-import Emitter from 'element-ui/src/mixins/emitter';
-import ElInput from 'element-ui/packages/input';
+import Popper from 'advance-ui/src/utils/vue-popper';
+import Emitter from 'advance-ui/src/mixins/emitter';
+import ElInput from 'advance-ui/packages/input';
 
 const NewPopper = {
   props: {

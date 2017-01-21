@@ -2,7 +2,7 @@
 import UploadList from './upload-list';
 import Upload from './upload';
 import IframeUpload from './iframe-upload';
-import ElProgress from 'element-ui/packages/progress';
+import ElProgress from 'advance-ui/packages/progress';
 
 function noop() {
 }

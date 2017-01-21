@@ -28,8 +28,8 @@
   </transition>
 </template>
 <script>
-  import Popper from 'element-ui/src/utils/vue-popper';
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Popper from 'advance-ui/src/utils/vue-popper';
+  import Emitter from 'advance-ui/src/mixins/emitter';
   export default {
     mixins: [Popper, Emitter],
 

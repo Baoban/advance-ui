@@ -44,7 +44,7 @@ Typical configurations for these config files are:
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "element-ui": "^1.0.0",
+    "advance-ui": "^1.0.0",
     "vue": "^2.1.6"
   },
   "devDependencies": {
@@ -138,8 +138,8 @@ You can import Element entirely, or just import what you need. Let's start with 
 In main.js:
 ```javascript
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-ai/index.css'
+import ElementUI from 'advance-ui'
+import 'advance-ui/lib/theme-ai/index.css'
 import App from './App.vue'
 
 Vue.use(ElementUI)
@@ -169,7 +169,7 @@ Then edit .babelrc:
   ],
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "advance-ui",
       "styleLibraryName": "theme-ai"
     }
   ]]]
@@ -180,7 +180,7 @@ Next, if you need Button and Select, edit main.js:
 
 ```javascript
 import Vue from 'vue'
-import { Button, Select } from 'element-ui'
+import { Button, Select } from 'advance-ui'
 import App from './App.vue'
 
 Vue.component(Button.name, Button)

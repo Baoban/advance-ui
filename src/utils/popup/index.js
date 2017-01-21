@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import merge from 'element-ui/src/utils/merge';
-import PopupManager from 'element-ui/src/utils/popup/popup-manager';
+import merge from 'advance-ui/src/utils/merge';
+import PopupManager from 'advance-ui/src/utils/popup/popup-manager';
 
 let idSeed = 1;
 const transitions = [];
