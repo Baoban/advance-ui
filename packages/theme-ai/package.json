@@ -1,7 +1,7 @@
 {
-  "name": "advance-theme-default",
+  "name": "theme-ai",
   "version": "1.1.5",
-  "description": "Element component default theme.",
+  "description": "Element component theme for advance.ai",
   "main": "lib/index.css",
   "style": "lib/index.css",
   "files": [
@@ -13,23 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElementUI/theme-default.git"
+    "url": "https://github.com/Baoban/theme-ai"
   },
-  "keywords": [
-    "element",
-    "theme"
-  ],
-  "author": "haiping.zeng <qingwei.li@ele.me>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ElementUI/theme-default/issues"
-  },
-  "homepage": "https://github.com/ElementUI/theme-default#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-postcss": "^6.1.1",
     "postcss-salad": "^1.0.5"
-  },
-  "dependencies": {}
+  }
 }
