@@ -1,5 +1,5 @@
 {
-  "name": "element-slider",
+  "name": "advance-slider",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

@@ -1,5 +1,5 @@
 {
-  "name": "element-form",
+  "name": "advance-form",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {

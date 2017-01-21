@@ -1,5 +1,5 @@
 {
-  "name": "element-select",
+  "name": "advance-select",
   "private": true,
   "main": "./lib/index.js",
   "devDependencies": {

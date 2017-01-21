@@ -1,5 +1,5 @@
 {
-  "name": "element-tag",
+  "name": "advance-tag",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

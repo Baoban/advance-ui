@@ -1,5 +1,5 @@
 {
-  "name": "element-message-box",
+  "name": "advance-message-box",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

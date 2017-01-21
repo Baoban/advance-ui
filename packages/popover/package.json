@@ -1,5 +1,5 @@
 {
-  "name": "element-popover",
+  "name": "advance-popover",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

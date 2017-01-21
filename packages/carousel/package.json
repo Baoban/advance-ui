@@ -1,5 +1,5 @@
 {
-  "name": "element-carousel",
+  "name": "advance-carousel",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {

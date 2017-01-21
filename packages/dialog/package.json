@@ -1,5 +1,5 @@
 {
-  "name": "element-dialog",
+  "name": "advance-dialog",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

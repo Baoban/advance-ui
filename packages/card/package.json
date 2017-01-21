@@ -1,5 +1,5 @@
 {
-  "name": "element-card",
+  "name": "advance-card",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

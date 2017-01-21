@@ -1,5 +1,5 @@
 {
-  "name": "element-tooltip",
+  "name": "advance-tooltip",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

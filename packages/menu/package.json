@@ -1,5 +1,5 @@
 {
-  "name": "element-menu",
+  "name": "advance-menu",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

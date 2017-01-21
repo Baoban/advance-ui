@@ -1,5 +1,5 @@
 {
-  "name": "element-input",
+  "name": "advance-input",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

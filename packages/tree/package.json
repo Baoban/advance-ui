@@ -1,5 +1,5 @@
 {
-  "name": "element-tree",
+  "name": "advance-tree",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

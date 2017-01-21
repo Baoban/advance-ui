@@ -1,5 +1,5 @@
 {
-  "name": "element-rate",
+  "name": "advance-rate",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

@@ -1,5 +1,5 @@
 {
-  "name": "element-tabs",
+  "name": "advance-tabs",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}

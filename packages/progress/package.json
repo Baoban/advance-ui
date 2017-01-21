@@ -1,5 +1,5 @@
 {
-  "name": "element-progress",
+  "name": "advance-progress",
   "private": true,
   "main": "./lib/index.js",
   "dependencies": {}
