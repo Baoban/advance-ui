@@ -86,19 +86,19 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from 'element-ui/src/mixins/emitter';
-  import Locale from 'element-ui/src/mixins/locale';
-  import ElInput from 'element-ui/packages/input';
+  import Emitter from 'advance-ui/src/mixins/emitter';
+  import Locale from 'advance-ui/src/mixins/locale';
+  import ElInput from 'advance-ui/packages/input';
   import ElSelectMenu from './select-dropdown.vue';
   import ElOption from './option.vue';
-  import ElTag from 'element-ui/packages/tag';
-  import ElScrollbar from 'element-ui/packages/scrollbar';
+  import ElTag from 'advance-ui/packages/tag';
+  import ElScrollbar from 'advance-ui/packages/scrollbar';
   import debounce from 'throttle-debounce/debounce';
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
-  import { addClass, removeClass, hasClass } from 'element-ui/src/utils/dom';
-  import { addResizeListener, removeResizeListener } from 'element-ui/src/utils/resize-event';
-  import { t } from 'element-ui/src/locale';
-  import merge from 'element-ui/src/utils/merge';
+  import Clickoutside from 'advance-ui/src/utils/clickoutside';
+  import { addClass, removeClass, hasClass } from 'advance-ui/src/utils/dom';
+  import { addResizeListener, removeResizeListener } from 'advance-ui/src/utils/resize-event';
+  import { t } from 'advance-ui/src/locale';
+  import merge from 'advance-ui/src/utils/merge';
   const sizeMap = {
     'large': 42,
     'small': 30,

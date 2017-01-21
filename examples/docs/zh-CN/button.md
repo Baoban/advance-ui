@@ -1,5 +1,5 @@
 <script>
-  import { addClass } from 'element-ui/src/utils/dom';
+  import { addClass } from 'advance-ui/src/utils/dom';
   export default {
     data() {
       return {

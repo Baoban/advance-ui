@@ -31,12 +31,12 @@
 </template>
 
 <script type="text/babel">
-  import Popper from 'element-ui/src/utils/vue-popper';
-  import Locale from 'element-ui/src/mixins/locale';
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
+  import Popper from 'advance-ui/src/utils/vue-popper';
+  import Locale from 'advance-ui/src/mixins/locale';
+  import Clickoutside from 'advance-ui/src/utils/clickoutside';
   import Dropdown from './dropdown';
-  import ElCheckbox from 'element-ui/packages/checkbox';
-  import ElCheckboxGroup from 'element-ui/packages/checkbox-group';
+  import ElCheckbox from 'advance-ui/packages/checkbox';
+  import ElCheckboxGroup from 'advance-ui/packages/checkbox-group';
 
   export default {
     name: 'ElTableFilterPanel',

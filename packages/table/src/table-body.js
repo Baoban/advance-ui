@@ -1,5 +1,5 @@
 import { getCell, getColumnByCell, getRowIdentity } from './util';
-import ElCheckbox from 'element-ui/packages/checkbox';
+import ElCheckbox from 'advance-ui/packages/checkbox';
 
 export default {
   components: {

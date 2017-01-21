@@ -36,9 +36,9 @@
 </template>
 
 <script type="text/babel">
-  import ElInputNumber from 'element-ui/packages/input-number';
-  import ElTooltip from 'element-ui/packages/tooltip';
-  import { getStyle } from 'element-ui/src/utils/dom';
+  import ElInputNumber from 'advance-ui/packages/input-number';
+  import ElTooltip from 'advance-ui/packages/tooltip';
+  import { getStyle } from 'advance-ui/src/utils/dom';
 
   export default {
     name: 'ElSlider',
