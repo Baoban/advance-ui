@@ -6,7 +6,7 @@
   @b dropdown {
     display: inline-block;
     position: relative;
-    color: var(--color-extra-light-black);
+    color: #475669;
     font-size: var(--font-size-base);
 
     .el-button-group {
@@ -27,8 +27,8 @@
   }
   @b dropdown-menu {
     margin: 5px 0;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-base-gray);
+    background-color: #fff;
+    border: 1px solid #D3DCE6;
     box-shadow: var(--dropdown-menu-box-shadow);
     padding: 6px 0;
     z-index: 10;
@@ -51,19 +51,19 @@
       @m divided {
         position: relative;
         margin-top: 6px;
-        border-top: 1px solid var(--color-base-gray);
+        border-top: 1px solid #D3DCE6;
 
         &:before {
           content: '';
           height: 6px;
           display: block;
           margin: 0 -10px;
-          background-color: var(--color-white);
+          background-color: #fff;
         }
       }
       @when disabled {
         cursor: default;
-        color: var(--color-extra-light-silver);
+        color: #c0ccda;
         pointer-events: none;
       }
     }

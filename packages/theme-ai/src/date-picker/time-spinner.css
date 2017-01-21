@@ -2,23 +2,18 @@
 
 @component-namespace el {
   @b time-spinner {
-    &.has-seconds {
-      .el-time-spinner__wrapper {
-        width: 33%;
-      }
-
-      .el-time-spinner__wrapper:nth-child(2) {
-        padding-left: 1%;
-      }
-    }
-
     @e wrapper {
-      max-height: 190px;
-      overflow: auto;
+      height: 190px;
+      overflow: hidden;
       display: inline-block;
-      width: 50%;
+      width: calc(100% / 3);
       vertical-align: top;
       position: relative;
+      -ms-overflow-style: none;
+
+      &:hover {
+        overflow-y: auto;
+      }
     }
 
     @e list {
@@ -42,12 +37,12 @@
       font-size: 12px;
 
       &:hover:not(.disabled):not(.active) {
-        background: var(--datepicker-cell-hover-color);
+        background: #E5E9F2;
         cursor: pointer;
       }
 
       &.active:not(.disabled) {
-        color: var(--color-white);
+        color: #fff;
       }
 
       &.disabled {

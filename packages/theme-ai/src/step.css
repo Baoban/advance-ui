@@ -25,7 +25,7 @@
       display: inline-block;
       position: absolute;
       border-color: inherit;
-      background-color: var(--color-extra-light-silver);
+      background-color: #c0ccda;
 
       @when icon {
         @when horizontal {
@@ -83,59 +83,59 @@
         border-style: solid;
 
         @when process {
-          color: var(--color-white);
-          background-color: var(--color-extra-light-silver);
-          border-color: var(--color-extra-light-silver);
+          color: #fff;
+          background-color: #c0ccda;
+          border-color: #c0ccda;
         }
 
         @when wait {
-          color: var(--color-extra-light-silver);
-          background-color: var(--color-white);
-          border-color: var(--color-extra-light-silver);
+          color: #c0ccda;
+          background-color: #fff;
+          border-color: #c0ccda;
         }
 
         @when success {
-          color: var(--color-white);
-          background-color: var(--color-success);
-          border-color: var(--color-success);
+          color: #fff;
+          background-color: #13ce66;
+          border-color: #13ce66;
         }
 
         @when error {
-          color: var(--color-white);
-          background-color: var(--color-danger);
-          border-color: var(--color-danger);
+          color: #fff;
+          background-color: #ff4949;
+          border-color: #ff4949;
         }
 
         @when finish {
-          color: var(--color-white);
-          background-color: var(--color-primary);
-          border-color: var(--color-primary);
+          color: #fff;
+          background-color: #20a0ff;
+          border-color: #20a0ff;
         }
       }
 
       @when process {
-        color: var(--color-extra-light-silver);
-        border-color: var(--color-extra-light-silver);
+        color: #c0ccda;
+        border-color: #c0ccda;
       }
 
       @when wait {
-        color: var(--color-extra-light-silver);
-        border-color: var(--color-extra-light-silver);
+        color: #c0ccda;
+        border-color: #c0ccda;
       }
 
       @when success {
-        color: var(--color-success);
-        border-color: var(--color-success);
+        color: #13ce66;
+        border-color: #13ce66;
       }
 
       @when error {
-        color: var(--color-danger);
-        border-color: var(--color-danger);
+        color: #ff4949;
+        border-color: #ff4949;
       }
 
       @when finish {
-        color: var(--color-primary);
-        border-color: var(--color-primary);
+        color: #20a0ff;
+        border-color: #20a0ff;
       }
     }
 
@@ -152,27 +152,27 @@
 
       @when process {
         font-weight: 700;
-        color: var(--color-extra-light-black);
+        color: #475669;
       }
 
       @when wait {
         font-weight: normal;
-        color: var(--color-light-silver);
+        color: #99a9bf;
       }
 
       @when success {
         font-weight: 700;
-        color: var(--color-success);
+        color: #13ce66;
       }
 
       @when error {
         font-weight: 700;
-        color: var(--color-danger);
+        color: #ff4949;
       }
 
       @when finish {
         font-weight: 700;
-        color: var(--color-primary);
+        color: #20a0ff;
       }
     }
 
@@ -182,23 +182,23 @@
       line-height: 14px;
 
       @when process {
-        color: var(--color-base-silver);
+        color: #8492a6;
       }
 
       @when wait {
-        color: var(--color-extra-light-silver);
+        color: #c0ccda;
       }
 
       @when success {
-        color: var(--color-success);
+        color: #13ce66;
       }
 
       @when error {
-        color: var(--color-danger);
+        color: #ff4949;
       }
 
       @when finish {
-        color: var(--color-primary);
+        color: #20a0ff;
       }
     }
   }

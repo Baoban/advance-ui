@@ -10,7 +10,7 @@
 
     @e separator {
       margin: 0 8px;
-      color: var(--color-extra-light-silver);
+      color: #c0ccda;
     }
     @e item {
       float: left;
@@ -18,7 +18,7 @@
       @e inner {
         &, & a {
           transition: color .15s linear;
-          color:var(--color-extra-light-black);
+          color:#475669;
 
           &:hover {
             color: var(--color-primary);
@@ -31,7 +31,7 @@
         .el-breadcrumb__item__inner,
         .el-breadcrumb__item__inner a {
           &, &:hover {
-            color: var(--color-light-silver);
+            color: #99a9bf;
             cursor: text;
           }
         }

@@ -7,14 +7,12 @@
     background-color: var(--tag-fill);
     display: inline-block;
     padding: var(--tag-padding);
-    height: 24px;
-    line-height: calc(@height - 2);
+    height: 22px;
+    line-height: @height;
     font-size: var(--tag-font-size);
     color: var(--tag-color);
     border-radius: var(--tag-border-radius);
-    box-sizing: border-box;
-    border: 1px solid transparent;
-    white-space: nowrap;
+    border: 1px solid var(--tag-border);
 
     & .el-icon-close {
       border-radius: 50%;
@@ -31,7 +29,7 @@
       right: -2px;
 
       &:hover {
-        background-color: var(--color-white);
+        background-color: #fff;
         color: var(--tag-fill);
       }
     }
@@ -46,7 +44,7 @@
 
       & .el-tag__close:hover {
         background-color: var(--tag-gray-color);
-        color: var(--color-white);
+        color: #fff;
       }
     }
     @m primary {
@@ -59,7 +57,7 @@
 
       & .el-tag__close:hover {
         background-color: var(--tag-primary-color);
-        color: var(--color-white);
+        color: #fff;
       }
     }
     @m success {
@@ -72,7 +70,7 @@
 
       & .el-tag__close:hover {
         background-color: var(--tag-success-color);
-        color: var(--color-white);
+        color: #fff;
       }
     }
     @m warning {
@@ -85,7 +83,7 @@
 
       & .el-tag__close:hover {
         background-color: var(--tag-warning-color);
-        color: var(--color-white);
+        color: #fff;
       }
     }
     @m danger {
@@ -98,7 +96,7 @@
 
       & .el-tag__close:hover {
         background-color: var(--tag-danger-color);
-        color: var(--color-white);
+        color: #fff;
       }
     }
   }
