@@ -31,26 +31,24 @@
     @e file {
       transition: all .5s cubic-bezier(.55,0,.1,1);
       font-size: 14px;
-      color: var(--color-extra-light-black);
+      color: #475669;
       line-height: 32px;
       position: relative;
       box-sizing: border-box;
       border-radius: 4px;
       width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       position: relative;
 
       a {
-        color: var(--color-extra-light-black);
-        display: block;
-        margin-right: 40px;
-        overflow: hidden;
-        padding-left: 4px;
-        text-overflow: ellipsis;
+        color: #475669;
         transition: color .3s;
-        white-space: nowrap;
+        padding-left: 4px;
 
         [class^="el-icon"] {
-          color: var(--color-light-silver);
+          color: #99a9bf;
           margin-right: 7px;
           height: 100%;
           line-height: inherit;
@@ -72,7 +70,7 @@
         padding-right: 0;
       }
       &:hover {
-        background-color: var(--color-extra-light-gray);
+        background-color: #eff2f7;
       }
       @when finished {
         & a:hover {
@@ -83,13 +81,13 @@
           .el-upload__btn-delete {
             display: block;
             cursor: pointer;
-          }
+          }   
         }
       }
     }
     @e tip {
       font-size: 12px;
-      color: var(--color-base-silver);
+      color: #8492a6;
       margin-top: 7px;
     }
     @e btn-delete {
@@ -102,8 +100,8 @@
     }
   }
   @b dragger {
-    background-color: var(--color-dark-white);
-    border: 1px solid var(--color-extra-light-silver);
+    background-color: #f9fafc;
+    border: 1px solid #c0ccda;
     box-sizing: border-box;
     width: 360px;
     height: 180px;
@@ -119,7 +117,7 @@
     }
     & .el-icon-upload {
       font-size: 67px;
-      color: var(--color-light-silver);
+      color: #99a9bf;
       margin: 40px 0 16px;
       line-height: 50px;
     }
@@ -130,7 +128,7 @@
     & ~ .el-upload__files {
       margin-top: 7px;
       padding-top: 5px;
-      border-top: 1px solid rgba(var(--color-extra-light-silver), .2);
+      border-top: 1px solid rgba(#c0ccda, .2);
     }
 
     @e cover {
@@ -180,7 +178,7 @@
 
         & .btn {
           display: inline-block;
-          color: var(--color-white);
+          color: #fff;
           font-size: 14px;
           cursor: pointer;
           vertical-align: middle;
@@ -209,7 +207,7 @@
           }
 
           & i {
-            color: var(--color-white);
+            color: #fff;
             display: block;
             font-size: 24px;
             line-height: inherit;
@@ -222,7 +220,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: var(--color-white);
+        background-color: #fff;
         height: 36px;
         width: 100%;
         overflow: hidden;
@@ -234,7 +232,7 @@
         margin: 0;
         line-height: 36px;
         font-size: 14px;
-        color: var(--color-extra-light-black);
+        color: #475669;
       }
 
       & + .el-upload__inner {
@@ -245,7 +243,7 @@
     }
 
     @e text {
-      color: var(--color-light-silver);
+      color: #99a9bf;
       font-size: 14px;
       text-align: center;
 

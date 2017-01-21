@@ -8,7 +8,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--color-white);
+    background: #fff;
     border-radius: var(--border-radius-small);
     box-shadow: var(--dialog-box-shadow);
     box-sizing: border-box;
@@ -55,12 +55,12 @@
       line-height: 1;
       font-size: var(--dialog-title-font-size);
       font-weight: bold;
-      color: var(--color-base-black);
+      color: #1f2d3d;
     }
 
     @e body {
       padding: 30px 20px;
-      color: var(--color-extra-light-black);
+      color: #475669;
       font-size: var(--dialog-font-size);
     }
 

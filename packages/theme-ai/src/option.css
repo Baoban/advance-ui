@@ -31,11 +31,10 @@
       }
 
       &.selected {
-        color: var(--color-white);
-        background-color: var(--select-option-selected);
+        background-color: var(--select-option-hover-background);
 
         &.hover {
-          background-color: var(--select-option-selected-hover);
+          background-color: var(--select-option-hover-background);
         }
       }
 

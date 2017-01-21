@@ -11,7 +11,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    transition: opacity 0.3s;
 
     @when fullscreen {
       position: fixed;
@@ -20,7 +19,7 @@
         margin-top: calc(- var(--loading-fullscreen-spinner-size) / 2);
 
         .circular {
-          size: var(--loading-fullscreen-spinner-size);
+          width: var(--loading-fullscreen-spinner-size);
         }
       }
     }
@@ -40,13 +39,13 @@
     }
 
     .circular {
-      size: var(--loading-spinner-size);
-      animation: loading-rotate 2s linear infinite;
+      width: var(--loading-spinner-size);
+      animation: rotate 2s linear infinite;
     }
 
     .path {
-      animation: loading-dash 1.5s ease-in-out infinite;
-      stroke-dasharray: 90, 150;
+      animation: dash 1.5s ease-in-out infinite;
+      stroke-dasharray: 1, 100;
       stroke-dashoffset: 0;
       stroke-width: 2;
       stroke: var(--color-primary);
@@ -55,28 +54,23 @@
   }
 }
 
-.el-loading-fade-enter,
-.el-loading-fade-leave-active {
-  opacity: 0;
-}
-
-@keyframes loading-rotate {
+@keyframes rotate {
   100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes loading-dash {
+@keyframes dash {
   0% {
-    stroke-dasharray: 1, 200;
+    stroke-dasharray: 1, 100;
     stroke-dashoffset: 0;
   }
   50% {
-    stroke-dasharray: 90, 150;
-    stroke-dashoffset: -40px;
+    stroke-dasharray: 45, 100;
+    stroke-dashoffset: -35px;
   }
   100% {
-    stroke-dasharray: 90, 150;
-    stroke-dashoffset: -120px;
+    stroke-dasharray: 45, 100;
+    stroke-dashoffset: -124px;
   }
 }
