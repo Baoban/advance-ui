@@ -1,7 +1,7 @@
 {
-  "name": "element-ui",
+  "name": "advance-ui",
   "version": "1.1.3",
-  "description": "A Component Library for Vue.js.",
+  "description": "A Component Library for advance.ai",
   "main": "lib/element-ui.common.js",
   "files": [
     "lib",
@@ -29,18 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
+    "url": "git@github.com:Baoban/advance-ui.git"
   },
-  "homepage": "http://element.eleme.io",
-  "keywords": [
-    "eleme",
-    "vue",
-    "components"
-  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ElemeFE/element/issues"
-  },
   "unpkg": "lib/index.js",
   "style": "lib/theme-ai/index.css",
   "dependencies": {
