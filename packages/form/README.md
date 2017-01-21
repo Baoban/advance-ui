@@ -13,7 +13,7 @@ npm i element-form -D
 ```javascript
 import Vue from 'vue'
 import ElForm from 'element-form'
-import 'element-theme-default/dist/form.css'
+import 'element-theme-ai/dist/form.css'
 
 Vue.use(ElForm)
 ```

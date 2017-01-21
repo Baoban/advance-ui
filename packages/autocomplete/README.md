@@ -13,7 +13,7 @@ npm i element-autocomplete -D
 ```javascript
 import Vue from 'vue'
 import ElAutocomplete from 'element-autocomplete'
-import 'element-theme-default/dist/autocomplete.css'
+import 'element-theme-ai/dist/autocomplete.css'
 
 Vue.use(ElAutocomplete)
 ```

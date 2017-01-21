@@ -10,10 +10,10 @@ npm i element-theme -g
 安装默认主题，可以从 npm 安装或者从 GitHub 拉取最新代码。
 ```shell
 # 从 npm
-npm i element-theme-default -D
+npm i element-theme-ai -D
 
 # 从 GitHub
-npm i https://github.com/ElementUI/theme-default -D
+npm i https://github.com/ElementUI/theme-ai -D
 ```
 
 ### 初始化变量文件

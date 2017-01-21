@@ -10,7 +10,7 @@ npm i element-switch -D
 ```javascript
 import Vue from 'vue'
 import ElSwitch from 'element-switch'
-import 'element-theme-default'
+import 'element-theme-ai'
 
 Vue.use(ElSwitch)
 ```

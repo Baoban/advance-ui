@@ -13,7 +13,7 @@ npm i element-button -D
 ```javascript
 import Vue from 'vue'
 import ElButton from 'element-button'
-import 'element-theme-default/dist/button.css'
+import 'element-theme-ai/dist/button.css'
 
 Vue.use(ElButton)
 ```

@@ -22,11 +22,11 @@ if [ "$TRAVIS_TAG" ]; then
   git push origin master --tags
   cd ../..
 
-  # build theme-default
+  # build theme-ai
   cd temp_web
-  git clone https://$ROT_TOKEN@github.com/ElementUI/theme-default.git && cd theme-default
+  git clone https://$ROT_TOKEN@github.com/ElementUI/theme-ai.git && cd theme-ai
   rm -rf *
-  cp -rf ../../packages/theme-default/** .
+  cp -rf ../../packages/theme-ai/** .
   git add -A .
   git commit -m "[build] $TRAVIS_TAG"
   git tag $TRAVIS_TAG
@@ -69,11 +69,11 @@ git commit -m "$TRAVIS_COMMIT_MSG"
 git push origin master
 cd ../..
 
-# push dev theme-default
+# push dev theme-ai
 cd temp_web
-git clone -b $TRAVIS_BRANCH https://$ROT_TOKEN@github.com/ElementUI/theme-default.git && cd theme-default
+git clone -b $TRAVIS_BRANCH https://$ROT_TOKEN@github.com/ElementUI/theme-ai.git && cd theme-ai
 rm -rf *
-cp -rf ../../packages/theme-default/** .
+cp -rf ../../packages/theme-ai/** .
 git add -A .
 git commit -m "$TRAVIS_COMMIT_MSG"
 git push origin $TRAVIS_BRANCH

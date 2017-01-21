@@ -13,7 +13,7 @@ npm i element-menu -D
 ```javascript
 import Vue from 'vue'
 import ElMenu from 'element-menu'
-import 'element-theme-default/dist/menu.css'
+import 'element-theme-ai/dist/menu.css'
 
 Vue.use(ElMenu)
 ```

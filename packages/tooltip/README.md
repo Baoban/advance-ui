@@ -13,7 +13,7 @@ npm i element-tooltip -D
 ```javascript
 import Vue from 'vue'
 import ElTooltip from 'element-tooltip'
-import 'element-theme-default/dist/tooltip.css'
+import 'element-theme-ai/dist/tooltip.css'
 
 Vue.use(ElTooltip)
 ```

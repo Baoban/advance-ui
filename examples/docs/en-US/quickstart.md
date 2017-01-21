@@ -139,7 +139,7 @@ In main.js:
 ```javascript
 import Vue from 'vue'
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-ai/index.css'
 import App from './App.vue'
 
 Vue.use(ElementUI)
@@ -170,7 +170,7 @@ Then edit .babelrc:
   "plugins": [["component", [
     {
       "libraryName": "element-ui",
-      "styleLibraryName": "theme-default"
+      "styleLibraryName": "theme-ai"
     }
   ]]]
 }

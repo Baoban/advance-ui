@@ -13,7 +13,7 @@ npm i element-dropdown -D
 ```javascript
 import Vue from 'vue'
 import ElDropdown from 'element-dropdown'
-import 'element-theme-default/dist/dropdown.css'
+import 'element-theme-ai/dist/dropdown.css'
 
 Vue.use(ElDropdown)
 ```

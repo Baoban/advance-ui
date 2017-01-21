@@ -13,7 +13,7 @@ npm i element-notification -D
 ```javascript
 import Vue from 'vue'
 import ElNotification from 'element-notification'
-import 'element-theme-default/dist/notification.css'
+import 'element-theme-ai/dist/notification.css'
 
 Vue.use(ElNotification)
 ```

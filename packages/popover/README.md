@@ -13,7 +13,7 @@ npm i element-popover -D
 ```javascript
 import Vue from 'vue'
 import ElPopover from 'element-popover'
-import 'element-theme-default/dist/popover.css'
+import 'element-theme-ai/dist/popover.css'
 
 Vue.use(ElPopover)
 ```

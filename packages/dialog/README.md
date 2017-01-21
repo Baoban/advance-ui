@@ -13,7 +13,7 @@ npm i element-dialog -D
 ```javascript
 import Vue from 'vue'
 import ElDialog from 'element-dialog'
-import 'element-theme-default'
+import 'element-theme-ai'
 
 Vue.use(ElDialog)
 ```

@@ -13,7 +13,7 @@ npm i element-rate -D
 ```javascript
 import Vue from 'vue'
 import ElRate from 'element-rate'
-import 'element-theme-default/dist/rate.css'
+import 'element-theme-ai/dist/rate.css'
 
 Vue.use(ElRate)
 ```
