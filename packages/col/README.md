@@ -13,7 +13,7 @@ npm i element-col -D
 ```javascript
 import Vue from 'vue'
 import ElCol from 'element-col'
-import 'element-theme-default/dist/col.css'
+import 'element-theme-ai/dist/col.css'
 
 Vue.use(ElCol)
 ```

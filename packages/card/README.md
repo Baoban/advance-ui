@@ -13,7 +13,7 @@ npm i element-card -D
 ```javascript
 import Vue from 'vue'
 import ElCard from 'element-card'
-import 'element-theme-default/dist/card.css'
+import 'element-theme-ai/dist/card.css'
 
 Vue.use(ElCard)
 ```

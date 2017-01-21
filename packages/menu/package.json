@@ -1,16 +1,6 @@
 {
-  "name": "element-menu",
-  "version": "1.0.0",
-  "description": "A menu component for Vue.js.",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
+  "name": "advance-menu",
+  "private": true,
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/menu",
-  "author": "elemefe",
-  "license": "MIT",
-  "dependencies": {
-  }
+  "dependencies": {}
 }

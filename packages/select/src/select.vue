@@ -49,7 +49,7 @@
       :disabled="disabled"
       :readonly="!filterable || multiple"
       :validate-event="false"
-      @focus="toggleMenu"
+      @focus="handleFocus"
       @click="handleIconClick"
       @mousedown.native="handleMouseDown"
       @keyup.native="debouncedOnInputChange"
@@ -268,6 +268,7 @@
           }
           this.query = '';
           this.selectedLabel = '';
+          this.inputLength = 20;
           this.resetHoverIndex();
           this.$nextTick(() => {
             if (this.$refs.input &&
@@ -400,6 +401,10 @@
         this.$nextTick(() => {
           this.resetInputHeight();
         });
+      },
+
+      handleFocus() {
+        this.visible = true;
       },
 
       handleIconClick(event) {

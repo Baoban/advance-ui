@@ -1,15 +1,6 @@
 {
-  "name": "element-alert",
-  "version": "1.0.0",
-  "description": "A alert component for Vue.js.",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
+  "name": "advance-alert",
+  "private": true,
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/alert",
-  "author": "elemefe",
-  "license": "MIT",
   "dependencies": {}
 }

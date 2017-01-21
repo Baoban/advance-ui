@@ -13,7 +13,7 @@ npm i element-message -D
 ```javascript
 import Vue from 'vue'
 import ElMessage from 'element-message'
-import 'element-theme-default/dist/message.css'
+import 'element-theme-ai/dist/message.css'
 
 Vue.use(ElMessage)
 ```

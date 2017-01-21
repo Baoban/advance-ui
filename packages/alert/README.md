@@ -13,7 +13,7 @@ npm i element-alert -D
 ```javascript
 import Vue from 'vue'
 import ElAlert from 'element-alert'
-import 'element-theme-default/dist/alert.css'
+import 'element-theme-ai/dist/alert.css'
 
 Vue.use(ElAlert)
 ```

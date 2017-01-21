@@ -13,7 +13,7 @@ npm i element-row -D
 ```javascript
 import Vue from 'vue'
 import ElRow from 'element-row'
-import 'element-theme-default/dist/row.css'
+import 'element-theme-ai/dist/row.css'
 
 Vue.use(ElRow)
 ```

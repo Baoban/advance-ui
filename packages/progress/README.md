@@ -13,7 +13,7 @@ npm i element-progress -D
 ```javascript
 import Vue from 'vue'
 import ElProgress from 'element-progress'
-import 'element-theme-default/dist/progress.css'
+import 'element-theme-ai/dist/progress.css'
 
 Vue.use(ElProgress)
 ```

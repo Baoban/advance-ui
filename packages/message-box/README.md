@@ -13,7 +13,7 @@ npm i element-message-box -D
 ```javascript
 import Vue from 'vue'
 import ElMessageBox from 'element-message-box'
-import 'element-theme-default/dist/message.css'
+import 'element-theme-ai/dist/message.css'
 
 Vue.use(ElMessageBox)
 ```

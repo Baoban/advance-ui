@@ -13,7 +13,7 @@ npm i element-radio -D
 ```javascript
 import Vue from 'vue'
 import ElRadio from 'element-radio'
-import 'element-theme-default/dist/radio.css'
+import 'element-theme-ai/dist/radio.css'
 
 Vue.use(ElRadio)
 ```

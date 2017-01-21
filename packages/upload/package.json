@@ -1,16 +1,6 @@
 {
-  "name": "element-upload",
-  "version": "0.0.0",
-  "description": "A upload component for Vue.js.",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
+  "name": "advance-upload",
+  "private": true,
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/upload",
-  "author": "elemefe",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {}
 }

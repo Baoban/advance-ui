@@ -13,7 +13,7 @@ npm i element-tabs -D
 ```javascript
 import Vue from 'vue'
 import ElTabs from 'element-tabs'
-import 'element-theme-default/dist/tabs.css'
+import 'element-theme-ai/dist/tabs.css'
 
 Vue.use(ElTabs)
 ```

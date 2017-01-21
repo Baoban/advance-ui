@@ -1,7 +1,7 @@
 {
-  "name": "element-ui",
-  "version": "1.1.3",
-  "description": "A Component Library for Vue.js.",
+  "name": "advance-ui",
+  "version": "1.1.4",
+  "description": "A Component Library for advance.ai",
   "main": "lib/element-ui.common.js",
   "files": [
     "lib",
@@ -9,9 +9,9 @@
     "packages"
   ],
   "scripts": {
-    "bootstrap": "yarn || npm i",
+    "bootstrap": "cnpm i || npm i",
     "build:file": "node build/bin/iconInit.js & node build/bin/build-entry.js & node build/bin/i18n.js",
-    "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-default/gulpfile.js && cp-cli packages/theme-default/lib lib/theme-default",
+    "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-ai/gulpfile.js && cp-cli packages/theme-ai/lib lib/theme-ai",
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage && lerna clean --yes",
     "deploy": "npm run deploy:build && gh-pages -d examples/element-ui --remote eleme && del examples/element-ui",
@@ -29,20 +29,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
+    "url": "git@github.com:Baoban/advance-ui.git"
   },
-  "homepage": "http://element.eleme.io",
-  "keywords": [
-    "eleme",
-    "vue",
-    "components"
-  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ElemeFE/element/issues"
-  },
   "unpkg": "lib/index.js",
-  "style": "lib/theme-default/index.css",
+  "style": "lib/theme-ai/index.css",
   "dependencies": {
     "async-validator": "^1.6.6",
     "babel-helper-vue-jsx-merge-props": "^2.0.0",
@@ -94,7 +85,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.8.0",
-    "lerna": "2.0.0-beta.18",
+    "lerna": "2.0.0-beta.32",
     "lolex": "^1.5.1",
     "markdown-it": "^6.1.1",
     "markdown-it-anchor": "^2.5.0",
@@ -103,7 +94,7 @@
     "phantomjs-prebuilt": "^2.1.13",
     "postcss": "^5.1.2",
     "postcss-loader": "^0.11.1",
-    "postcss-salad": "^1.0.5",
+    "postcss-salad": "^1.0.8",
     "rimraf": "^2.5.4",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",

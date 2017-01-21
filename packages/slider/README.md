@@ -13,7 +13,7 @@ npm i element-slider -D
 ```javascript
 import Vue from 'vue'
 import ElSlider from 'element-slider'
-import 'element-theme-default/dist/slider.css'
+import 'element-theme-ai/dist/slider.css'
 
 Vue.use(ElSlider)
 ```

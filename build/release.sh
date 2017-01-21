@@ -16,8 +16,8 @@ then
   VERSION=$VERSION npm run dist
 
   # publish theme
-  echo "Releasing theme-default $VERSION ..."
-  cd packages/theme-default
+  echo "Releasing theme-ai $VERSION ..."
+  cd packages/theme-ai
   npm version $VERSION --message "[release] $VERSION"
   npm publish
   cd ../..

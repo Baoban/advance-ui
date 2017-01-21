@@ -1,15 +1,6 @@
 {
-  "name": "element-pagination",
-  "version": "0.0.0",
-  "description": "A pagination component for Vue.js.",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
+  "name": "advance-pagination",
+  "private": true,
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/pagination",
-  "author": "qingwei-li<qingwei.li@ele.me>",
-  "license": "MIT",
   "dependencies": {}
 }

@@ -13,7 +13,7 @@ npm i element-tree -D
 ```javascript
 import Vue from 'vue'
 import ElTree from 'element-tree'
-import 'element-theme-default/dist/tree.css'
+import 'element-theme-ai/dist/tree.css'
 
 Vue.use(ElTree)
 ```

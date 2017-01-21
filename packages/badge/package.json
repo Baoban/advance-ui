@@ -1,15 +1,6 @@
 {
-  "name": "element-badge",
-  "version": "0.0.0",
-  "description": "A badge component for Vue.js.",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
+  "name": "advance-badge",
+  "private": true,
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/badge",
-  "author": "elemefe",
-  "license": "MIT",
   "dependencies": {}
 }

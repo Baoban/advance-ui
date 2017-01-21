@@ -1,16 +1,6 @@
 {
-  "name": "element-rate",
-  "version": "0.0.0",
-  "description": "A rate component for Vue.js.",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
+  "name": "advance-rate",
+  "private": true,
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/rate",
-  "author": "elemefe",
-  "license": "MIT",
-  "dependencies": {
-  }
+  "dependencies": {}
 }

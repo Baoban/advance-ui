@@ -13,7 +13,7 @@ npm i element-tag -D
 ```javascript
 import Vue from 'vue'
 import ElTag from 'element-tag'
-import 'element-theme-default/dist/tag.css'
+import 'element-theme-ai/dist/tag.css'
 
 Vue.use(ElTag)
 ```

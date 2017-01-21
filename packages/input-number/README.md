@@ -13,7 +13,7 @@ npm i element-input-number -D
 ```javascript
 import Vue from 'vue'
 import ElInputNumber from 'element-input-number'
-import 'element-theme-default/dist/input-number.css'
+import 'element-theme-ai/dist/input-number.css'
 
 Vue.use(ElInputNumber)
 ```

@@ -13,7 +13,7 @@ npm i element-breadcrumb -D
 ```javascript
 import Vue from 'vue'
 import ElBreadcrumb from 'element-breadcrumb'
-import 'element-theme-default/dist/breadcrumb.css'
+import 'element-theme-ai/dist/breadcrumb.css'
 
 Vue.use(ElBreadcrumb)
 ```

@@ -13,7 +13,7 @@ npm i element-checkbox -D
 ```javascript
 import Vue from 'vue'
 import ElCheckbox from 'element-checkbox'
-import 'element-theme-default/dist/checkbox.css'
+import 'element-theme-ai/dist/checkbox.css'
 
 Vue.use(ElCheckbox)
 ```

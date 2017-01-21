@@ -13,7 +13,7 @@ npm i element-badge -D
 ```javascript
 import Vue from 'vue'
 import ElBadge from 'element-badge'
-import 'element-theme-default/dist/badge.css'
+import 'element-theme-ai/dist/badge.css'
 
 Vue.use(ElBadge)
 ```
