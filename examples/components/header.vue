@@ -4,7 +4,7 @@
   }
   .header {
     height: 80px;
-    background-color: rgba(32, 160, 255, 1);
+    background-color: #71BE2D;
     color: #fff;
     top: 0;
     left: 0;
@@ -111,7 +111,7 @@
           left: 0;
           width: 100%;
           height: 4px;
-          background:#99d2fc;
+          background:#71BE2D;
         }
       }
     }
@@ -119,7 +119,7 @@
   .header-home {
     position: fixed;
     top: 0;
-    background-color: rgba(32, 160, 255, 0);
+    background-color: #71BE2D;
   }
 
   @media (max-width: 850px) {
@@ -166,14 +166,7 @@
     }">
       <div class="container">
         <h1><router-link :to="`/${ lang }`">
-          <img
-            src="../assets/images/element-logo.svg"
-            alt="element-logo"
-            class="nav-logo">
-          <img
-            src="../assets/images/element-logo-small.svg"
-            alt="element-logo"
-            class="nav-logo-small">
+          Advance UI
         </router-link></h1>
         <ul class="nav">
           <li class="nav-item">
@@ -231,7 +224,7 @@
         immediate: true,
         handler() {
           this.isHome = /^home/.test(this.$route.name);
-          this.headerStyle.backgroundColor = `rgba(32, 160, 255, ${ this.isHome ? '0' : '1' })`;
+          this.headerStyle.backgroundColor = `rgba(115, 188, 57, ${ this.isHome ? '0' : '1' })`;
         }
       }
     },
