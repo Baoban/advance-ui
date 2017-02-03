@@ -5,22 +5,25 @@
   @b input {
     position: relative;
     font-size: var(--font-size-base);
+    display: inline-block;
+    width: 100%;
 
     @e inner {
-      display: block;
-      padding: 3px 10px;
-      box-sizing: border-box;
-      width: 100%;
-      height: var(--input-height);
-      color: var(--input-color);
-      background-color: #fff;
+      appearance: none;
+      background-color: var(--color-white);
       background-image: none;
+      border-radius: 4px;
       border: var(--input-border);
-      border-radius: 0;
-      transition: var(--border-transition-base);
-      outline: none;
+      box-sizing: border-box;
+      color: var(--input-color);
+      display: block;
       font-size: inherit;
-      line-height: normal;
+      height: var(--input-height);
+      line-height: 1;
+      outline: none;
+      padding: 3px 10px;
+      transition: var(--border-transition-base);
+      width: 100%;
 
       &::placeholder {
         color: var(--input-placeholder-color);
@@ -29,6 +32,7 @@
       &:hover {
         border-color: var(--input-hover-border);
       }
+
       &:focus {
         outline: none;
         border-color: var(--input-focus-border);
@@ -43,6 +47,7 @@
       top: 0;
       text-align: center;
       color: var(--input-icon-color);
+      transition: all .3s;
 
       &:after {
         content: '';
@@ -54,6 +59,17 @@
 
       & + .el-input__inner {
         padding-right: 35px;
+      }
+
+      @when clickable {
+        &:hover {
+          cursor: pointer;
+          color: var(--input-hover-border);
+
+          & + .el-input__inner {
+            border-color: var(--input-hover-border);
+          }
+        }
       }
     }
 
@@ -101,7 +117,8 @@
 
   @b input-group {
     line-height: normal;
-    display: table;
+    display: inline-table;
+    width: 100%;
     border-collapse: separate;
 
     & > .el-input__inner {
@@ -109,13 +126,13 @@
       display: table-cell;
     }
     @e append, prepend {
-      background-color: var(--color-white);
-      color: var(--color-black);
+      background-color: var(--color-dark-white);
+      color: var(--color-light-silver);
       vertical-align: middle;
       display: table-cell;
       position: relative;
       border: var(--border-base);
-      border-radius: 0px;
+      border-radius: 4px;
       padding: 0 10px;
       width: 1%;
       white-space: nowrap;
@@ -166,6 +183,9 @@
   }
 
   @b textarea {
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
 
     @e inner {
       display: block;
@@ -176,7 +196,7 @@
       width: 100%;
       font-size: var(--font-size-base);
       color: var(--input-color);
-      background-color: #fff;
+      background-color: var(--color-white);
       background-image: none;
       border: var(--input-border);
       border-radius: 4px;
