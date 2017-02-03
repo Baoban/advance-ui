@@ -92,7 +92,7 @@
   --checkbox-color: var(--color-base-black);
   --checkbox-input-height: 18px;
   --checkbox-input-width: 18px;
-  --checkbox-input-border-radius: var(--border-radius-base);
+  --checkbox-input-border-radius: calc(var(--checkbox-input-height) / 2);
   --checkbox-input-fill: var(--color-white);
   --checkbox-input-border: var(--border-base);
   --checkbox-input-border-color: var(--border-color-base);
