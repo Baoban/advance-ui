@@ -10,6 +10,9 @@ dev:
 dist:
 	npm run dist
 
+release:
+	gas r -y
+
 publish: dist
 	npm publish
 
