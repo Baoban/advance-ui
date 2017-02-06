@@ -25,7 +25,7 @@
       display: inline-block;
       position: absolute;
       border-color: inherit;
-      background-color: var(--color-extra-light-silver);
+      background-color: var(--color-black);
 
       @when icon {
         @when horizontal {
@@ -84,14 +84,14 @@
 
         @when process {
           color: var(--color-white);
-          background-color: var(--color-extra-light-silver);
-          border-color: var(--color-extra-light-silver);
+          background-color: var(--color-black);
+          border-color: var(--color-black);
         }
 
         @when wait {
-          color: var(--color-extra-light-silver);
+          color: var(--color-black);
           background-color: var(--color-white);
-          border-color: var(--color-extra-light-silver);
+          border-color: var(--color-black);
         }
 
         @when success {
@@ -114,13 +114,13 @@
       }
 
       @when process {
-        color: var(--color-extra-light-silver);
-        border-color: var(--color-extra-light-silver);
+        color: var(--color-black);
+        border-color: var(--color-black);
       }
 
       @when wait {
-        color: var(--color-extra-light-silver);
-        border-color: var(--color-extra-light-silver);
+        color: var(--color-black);
+        border-color: var(--color-black);
       }
 
       @when success {
@@ -152,12 +152,12 @@
 
       @when process {
         font-weight: 700;
-        color: var(--color-extra-light-black);
+        color: var(--color-black);
       }
 
       @when wait {
         font-weight: normal;
-        color: var(--color-light-silver);
+        color: var(--color-black);
       }
 
       @when success {
@@ -182,11 +182,11 @@
       line-height: 14px;
 
       @when process {
-        color: var(--color-base-silver);
+        color: var(--color-black);
       }
 
       @when wait {
-        color: var(--color-extra-light-silver);
+        color: var(--color-black);
       }
 
       @when success {

@@ -13,7 +13,7 @@
       top: 110%;
       margin: 5px 0 0;
       background-color: var(--color-white);
-      border: 1px solid var(--color-base-gray);
+      border: 1px solid var(--color-black);
       width: 100%;
       padding: 6px 0;
       z-index: 10;
@@ -29,7 +29,7 @@
         padding: 0 10px;
         margin: 0;
         cursor: pointer;
-        color: var(--color-extra-light-black);
+        color: var(--color-black);
         font-size: 14px;
         white-space: nowrap;
         overflow: hidden;
@@ -47,7 +47,7 @@
         }
         &.divider {
           margin-top: 6px;
-          border-top: 1px solid var(--color-base-gray);
+          border-top: 1px solid var(--color-black);
         }
         &.divider:last-child {
           margin-bottom: -6px;

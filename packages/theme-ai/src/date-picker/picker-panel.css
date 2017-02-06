@@ -103,7 +103,7 @@
     border-right: 1px solid var(--datepicker-inner-border-color);
     box-sizing: border-box;
     padding-top: 6px;
-    background-color: var(--color-dark-white);
+    background-color: var(--color-white);
   }
 
   .el-picker-panel *[slot=sidebar] + .el-picker-panel__body,

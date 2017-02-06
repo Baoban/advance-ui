@@ -126,8 +126,8 @@
       display: table-cell;
     }
     @e append, prepend {
-      background-color: var(--color-dark-white);
-      color: var(--color-light-silver);
+      background-color: var(--color-white);
+      color: var(--color-black);
       vertical-align: middle;
       display: table-cell;
       position: relative;

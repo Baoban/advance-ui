@@ -8,7 +8,7 @@
 
     @e text {
       font-size:14px;
-      color:var(--color-extra-light-black);
+      color:var(--color-black);
       display: inline-block;
       vertical-align: middle;
       margin-left: 10px;
@@ -81,7 +81,7 @@
     @e outer {
       height: 6px;
       border-radius: 100px;
-      background-color: var(--color-light-gray);
+      background-color: var(--color-black);
       overflow: hidden;
       position: relative;
       vertical-align: middle;

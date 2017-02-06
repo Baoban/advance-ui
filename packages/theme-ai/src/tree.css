@@ -5,7 +5,7 @@
   @b tree {
     cursor: default;
     background: var(--color-white);
-    border: 1px solid var(--color-base-gray);
+    border: 1px solid var(--color-black);
 
     @e empty-block {
       position: relative;
@@ -40,7 +40,7 @@
         vertical-align: middle;
       }
       &:hover {
-        background: var(--color-light-gray);
+        background: var(--color-black);
       }
     }
 
@@ -53,7 +53,7 @@
       margin-left: 10px;
       border: 6px solid transparent;
       border-right-width: 0;
-      border-left-color: var(--color-light-silver);
+      border-left-color: var(--color-black);
       border-left-width: 7px;
 
       transform: rotate(0deg);
@@ -84,7 +84,7 @@
       vertical-align: middle;
       margin-right: 4px;
       font-size: 14px;
-      color: var(--color-light-silver);
+      color: var(--color-black);
     }
 
     & > .el-tree-node__children {

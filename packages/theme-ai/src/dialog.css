@@ -55,12 +55,12 @@
       line-height: 1;
       font-size: var(--dialog-title-font-size);
       font-weight: bold;
-      color: var(--color-base-black);
+      color: var(--color-black);
     }
 
     @e body {
       padding: 30px 20px;
-      color: var(--color-extra-light-black);
+      color: var(--color-black);
       font-size: var(--dialog-font-size);
     }
 
