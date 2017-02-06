@@ -1,5 +1,5 @@
 export default {
-  el: {
+  ui: {
     datepicker: {
       now: 'Now',
       today: 'Today',
