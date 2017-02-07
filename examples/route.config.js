@@ -27,7 +27,7 @@ const registerRoute = (navConfig) => {
       }
     });
   });
-  function addRoute(page, lang, index) {
+  function addRoute (page, lang, index) {
     const component = page.path === '/changelog'
       ? require(`./pages/${ lang }/changelog.vue`)
       : require(`./docs/${ lang }${page.path}.md`);
@@ -50,7 +50,7 @@ const registerRoute = (navConfig) => {
 
 let route = registerRoute(navConfig);
 
-const generateMiscRoutes = function(lang) {
+const generateMiscRoutes = function (lang) {
   let guideRoute = {
     path: `/${ lang }/guide`, // 指南
     redirect: `/${ lang }/guide/design`,
@@ -89,17 +89,7 @@ langs.forEach(lang => {
   route = route.concat(generateMiscRoutes(lang.lang));
 });
 
-route.push({
-  path: '/play',
-  name: 'play',
-  component: require('./play/index.vue')
-});
-
-let userLanguage = localStorage.getItem('ELEMENT_LANGUAGE') || window.navigator.language || 'en-US';
-let defaultPath = '/en-US';
-if (userLanguage.indexOf('zh-') !== -1) {
-  defaultPath = '/zh-CN';
-}
+const defaultPath = '/en-US'
 
 route = route.concat([{
   path: '/',

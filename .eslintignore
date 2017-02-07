@@ -4,3 +4,9 @@ src/utils/date.js
 node_modules
 lib
 coverage
+
+build
+examples
+packages
+src
+test

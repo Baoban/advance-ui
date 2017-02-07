@@ -22,7 +22,7 @@ Vue.component('footer-nav', FooterNav);
 const router = new VueRouter({
   mode: 'hash',
   base: __dirname,
-  routes
+  routes: routes,
 });
 
 router.afterEach(route => {
@@ -38,5 +38,5 @@ router.afterEach(route => {
 
 new Vue({ // eslint-disable-line
   render: h => h(entry),
-  router
+  router: router,
 }).$mount('#app');

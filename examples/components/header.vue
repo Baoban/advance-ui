@@ -66,7 +66,7 @@
       position: relative;
       cursor: pointer;
       margin-left: 20px;
-    
+
       &:last-child {
         cursor: default;
         margin-left: 34px;
@@ -98,7 +98,7 @@
         &:hover {
           opacity: 1;
         }
-         
+
         &.active {
           font-weight: 700;
         }
@@ -136,7 +136,7 @@
         &:last-child {
           margin-left: 10px;
         }
-         
+
         a {
           padding: 0 5px;
         }
@@ -239,7 +239,6 @@
     methods: {
       switchLang(targetLang) {
         if (this.lang === targetLang) return;
-        localStorage.setItem('ELEMENT_LANGUAGE', targetLang);
         this.$router.push(this.$route.path.replace(this.lang, targetLang));
       }
     },
