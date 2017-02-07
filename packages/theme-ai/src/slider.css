@@ -136,7 +136,7 @@
     @e stop {
       position: absolute;
       size: var(--slider-height);
-      border-radius: var(--border-radius-circle);
+      border-radius: 100%;
       background-color: var(--slider-stop-background-color);
       transform: translateX(-50%);
     }

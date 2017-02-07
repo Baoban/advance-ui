@@ -7,7 +7,7 @@
     position: absolute;
     z-index: 1001;
     border: var(--select-dropdown-border);
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius-base);
     background-color: var(--select-dropdown-background);
     box-shadow: var(--select-dropdown-shadow);
     box-sizing: border-box;

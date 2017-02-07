@@ -24,7 +24,7 @@
       width: 110px;
       input {
         padding-right: 25px;
-        border-radius: var(--border-radius-small);
+        border-radius: var(--border-radius-base);
         height: 28px;
       }
     }

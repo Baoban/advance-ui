@@ -48,7 +48,7 @@
           right: 8px;
           text-align: center;
           transform: translateY(-50%) rotateZ(180deg);
-          border-radius: var(--border-radius-circle);
+          border-radius: 100%;
           color: var(--select-input-color);
 
           &:hover {

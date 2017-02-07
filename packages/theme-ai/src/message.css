@@ -8,7 +8,7 @@
     min-width: var(--message-min-width);
     padding: var(--message-padding);
     box-sizing: border-box;
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius-base);
     position: fixed;
     left: 50%;
     top: 20px;
