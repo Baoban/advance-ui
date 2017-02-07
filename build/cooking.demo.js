@@ -5,10 +5,9 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var striptags = require('./strip-tags');
 var slugify = require('transliteration').slugify;
 var isProd = process.env.NODE_ENV === 'production';
-var isPlay = !!process.env.PLAY_ENV;
 
-function convert(str) {
-  str = str.replace(/(&#x)(\w{4});/gi, function($0) {
+function convert (str) {
+  str = str.replace(/(&#x)(\w{4});/gi, function ($0) {
     return String.fromCharCode(parseInt(encodeURIComponent($0).replace(/(%26%23x)(\w{4})(%3B)/g, '$2'), 16));
   });
   return str;
@@ -16,9 +15,9 @@ function convert(str) {
 
 cooking.set({
   entry: isProd ? {
-    docs: './examples/entry.js',
-    'advance-ui': './src/index.js'
-  } : (isPlay ? './examples/play.js' : './examples/entry.js'),
+      docs: './examples/entry.js',
+      'advance-ui': './src/index.js'
+    } : './examples/entry.js',
   dist: './examples/advance-ui/',
   template: [
     {
@@ -37,8 +36,8 @@ cooking.set({
   },
   minimize: true,
   chunk: isProd ? {
-    'common': { name: ['advance-ui', 'manifest'] }
-  } : false,
+      'common': { name: ['advance-ui', 'manifest'] }
+    } : false,
   extractCSS: true,
   alias: config.alias,
   extends: ['vue2', 'lint'],
@@ -64,11 +63,11 @@ cooking.add('vueMarkdown', {
       permalinkBefore: true
     }],
     [require('markdown-it-container'), 'demo', {
-      validate: function(params) {
+      validate: function (params) {
         return params.trim().match(/^demo\s*(.*)$/);
       },
 
-      render: function(tokens, idx) {
+      render: function (tokens, idx) {
         var m = tokens[idx].info.trim().match(/^demo\s*(.*)$/);
         if (tokens[idx].nesting === 1) {
           var description = (m && m.length > 1) ? m[1] : '';
@@ -92,8 +91,8 @@ cooking.add('vueMarkdown', {
       }
     }]
   ],
-  preprocess: function(MarkdownIt, source) {
-    MarkdownIt.renderer.rules.table_open = function() {
+  preprocess: function (MarkdownIt, source) {
+    MarkdownIt.renderer.rules.table_open = function () {
       return '<table class="table">';
     };
     MarkdownIt.renderer.rules.fence = wrap(MarkdownIt.renderer.rules.fence);
@@ -101,8 +100,8 @@ cooking.add('vueMarkdown', {
   }
 });
 
-var wrap = function(render) {
-  return function() {
+var wrap = function (render) {
+  return function () {
     return render.apply(this, arguments)
       .replace('<code class="', '<code class="hljs ')
       .replace('<code>', '<code class="hljs">');

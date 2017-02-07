@@ -288,7 +288,6 @@
 
   /* Group
   -------------------------- */
-  --group-option-flex: 0 0 (1/5) *100%;
   --group-option-offset-bottom: 12px;
   --group-option-fill-hover: rgba(var(--color-black), 0.06);
   --group-title-color: var(--color-black);
