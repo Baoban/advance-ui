@@ -1,0 +1,36 @@
+@import "./common.css";
+
+:root {
+  --input-width: 140px;
+  --input-height: 24px;
+  --input-font-size: var(--font-size-base);
+  --input-border: var(--border-base);
+  --input-border-radius: 0px;
+  --input-max-width: 20000px;
+
+  --input-color: var(--font-color-base);
+  --input-fill: var(--color-white);
+  --input-border-color: var(--border-color-base);
+  --input-border-color-hover: var(--border-color-hover);
+  --input-icon-color: var(--icon-color);
+  --input-placeholder-color: #999999;
+
+  --input-disabled-color: var(--font-color-disabled-base);
+  --input-disabled-fill: #e9e9e9;
+  --input-disabled-border-color: #999999;
+  --input-disabled-placeholder-color: var(--input-placeholder-color);
+
+  --input-hover-border: var(--border-color-hover);
+
+  --input-focus-border: var(--color-primary);
+  --input-focus-fill: var(--color-white);
+
+  --input-large-height: 42px;
+  --input-large-font-size: 16px;
+
+  --input-small-height: 30px;
+  --input-small-font-size: 13px;
+
+  --input-mini-height: 22px;
+  --input-mini-font-size: 12px;
+}

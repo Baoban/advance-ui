@@ -7,6 +7,41 @@
 @import "./option-group.css";
 @import "./scrollbar.css";
 
+:root {
+  --select-border-color-hover: var(--border-color-hover);
+  --select-disabled-border: #cccccc;
+  --select-font-size: var(--font-size-base);
+  --select-close-hover-color: var(--color-black);
+
+  --select-input-color: var(--color-black);
+  --select-multiple-input-color: #666;
+  --select-input-focus-background: var(--color-primary);
+  --select-input-font-size: 12px;
+
+  --select-tag-height: 16px;
+  --select-tag-color: var(--color-white);
+  --select-tag-background: var(--color-primary);
+
+  --select-option-color: var(--link-color);
+  --select-option-disabled-color: var(--color-black);
+  --select-option-height: 36px;
+  --select-option-hover-background: var(--color-black);
+  --select-option-selected: var(--color-primary);
+  --select-option-selected-hover: shade(var(--color-primary), 0.12);
+
+  --select-group-color: #999;
+  --select-group-height: 30px;
+  --select-group-font-size: 12px;
+
+  --select-dropdown-background: var(--color-white);
+  --select-dropdown-shadow: var(--box-shadow-base);
+  --select-dropdown-empty-color: #999;
+  --select-dropdown-max-height: 300px;
+  --select-dropdown-padding: 6px 0;
+  --select-dropdown-empty-padding: 10px 0;
+  --select-dropdown-border: solid 1px #cccccc;
+}
+
 @component-namespace el {
 
   @b select {
@@ -32,13 +67,13 @@
         color: var(--select-input-color);
         font-size: var(--select-input-font-size);
         transition: transform .3s;
-        transform: translateY(-50%) rotateZ(180deg);
+        transform: translateY(-50%) rotateZ(180deg) scale(0.7, 0.7);
         line-height: 16px;
         top: 50%;
         cursor: pointer;
 
         @when reverse {
-          transform: translateY(-50%);
+          transform: translateY(-50%) scale(0.7, 0.7);
         }
 
         @when show-close {
@@ -47,7 +82,7 @@
           font-size: var(--select-font-size);
           right: 8px;
           text-align: center;
-          transform: translateY(-50%) rotateZ(180deg);
+          transform: translateY(-50%) rotateZ(180deg) scale(0.7, 0.7);
           border-radius: 100%;
           color: var(--select-input-color);
 

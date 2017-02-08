@@ -1,40 +1,5 @@
 @charset "UTF-8";
-@import "./common/var.css";
-
-:root {
-  --input-width: 140px;
-  --input-height: 24px;
-  --input-font-size: var(--font-size-base);
-  --input-color: var(--font-color-base);
-  --input-border: var(--border-base);
-  --input-border-color: var(--border-color-base);
-  --input-border-radius: 0px;
-  --input-border-color-hover: var(--border-color-hover);
-  --input-fill: var(--color-white);
-  --input-color-disabled: var(--font-color-disabled-base);
-  --input-icon-color: var(--icon-color);
-  --input-placeholder-color: #999999;
-  --input-max-width: 20000px;
-
-  --input-hover-border: var(--border-color-hover);
-
-  --input-focus-border: var(--color-primary);
-  --input-focus-fill: var(--color-white);
-
-  --input-disabled-color: #999999;
-  --input-disabled-fill: #e9e9e9;
-  --input-disabled-border-color: var(--input-border-color);
-  --input-disabled-placeholder-color: var(--input-placeholder-color);
-
-  --input-large-height: 42px;
-  --input-large-font-size: 16px;
-
-  --input-small-height: 30px;
-  --input-small-font-size: 13px;
-
-  --input-mini-height: 22px;
-  --input-mini-font-size: 12px;
-}
+@import "common/var/input.css";
 
 @component-namespace el {
   @b input {
@@ -118,7 +83,7 @@
     @when disabled {
       .el-input__inner {
         background-color: var(--input-disabled-fill);
-        border-color: var(--input-disabled-border-color);
+        border-color: var(--border-color-disabled);
         color: var(--input-disabled-color);
         cursor: not-allowed;
 
@@ -256,7 +221,7 @@
     @when disabled {
       .el-textarea__inner {
         background-color: var(--input-disabled-fill);
-        border-color: var(--input-disabled-border-color);
+        border-color: var(--border-color-disabled);
         color: var(--input-disabled-color);
         cursor: not-allowed;
 

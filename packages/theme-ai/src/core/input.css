@@ -22,7 +22,7 @@
       background-color: var(--input-fill-disabled);
       border-color: inherit;
       box-shadow: none;
-      color: var(--input-color-disabled);
+      color: var(--input-disabled-color);
       cursor: not-allowed;
     }
 

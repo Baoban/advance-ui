@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "./input.css";
-@import "./common/var.css";
+@import "common/var/input.css";
 
 @component-namespace el {
   @b input-number {
@@ -34,7 +34,7 @@
       }
 
       @when disabled {
-        color: #cccccc;
+        color: var(--input-disabled-fill);
         cursor: not-allowed;
       }
     }
@@ -48,11 +48,11 @@
 
     @when disabled {
       & .el-input-number__increase, .el-input-number__decrease {
-        border-color: #cccccc;
-        color: #cccccc;
+        border-color: var(--input-disabled-border-color);
+        color: var(--input-disabled-color);
 
         &:hover {
-          color: #cccccc;
+          color: var(--input-disabled-color);
           cursor: not-allowed;
         }
       }
