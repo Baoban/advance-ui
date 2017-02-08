@@ -1,7 +1,28 @@
 @charset "UTF-8";
 @import "./input.css";
-@import "./common/var.css";
-/*@import "./core/dropdown.css";*/
+@import "./common/var/base.css";
+
+:root {
+  --cascader-height: 200px;
+  --cascader-menu-fill: var(--color-white);
+  --cascader-menu-font-size: var(--font-size-base);
+  --cascader-menu-radius: var(--border-radius-base);
+  --cascader-menu-border: var(--border-base);
+  --cascader-menu-border-color: var(--border-color-base);
+  --cascader-menu-border-width: var(--border-width-base);
+  --cascader-menu-color: var(--font-color-base);
+  --cascader-menu-option-color-active: var(--color-black);
+  --cascader-menu-option-fill-active: rgba(var(--color-black), 0.12);
+  --cascader-menu-option-color-hover: var(--font-color-base);
+  --cascader-menu-option-fill-hover: rgba(var(--color-black), 0.06);
+  --cascader-menu-option-color-disabled: #999;
+  --cascader-menu-option-fill-disabled: rgba(var(--color-black), 0.06);
+  --cascader-menu-option-empty-color: #666;
+  --cascader-menu-group-color: #999;
+  --cascader-menu-shadow: 0 1px 2px rgba(var(--color-black), 0.14), 0 0 3px rgba(var(--color-black), 0.14);
+  --cascader-menu-option-pinyin-color: #999;
+  --cascader-menu-submenu-shadow: 1px 1px 2px rgba(var(--color-black), 0.14), 1px 0 2px rgba(var(--color-black), 0.14);
+}
 
 @component-namespace element {
 

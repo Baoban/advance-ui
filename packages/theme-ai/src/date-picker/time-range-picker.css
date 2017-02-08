@@ -1,4 +1,4 @@
-@import "../common/var.css";
+@import "../common/var/picker.css";
 
 @component-namespace el {
   @b time-range-picker {
@@ -27,7 +27,7 @@
 
     @e body {
       border-radius:2px;
-      border: 1px solid var(--datepicker-border-color);
+      border: 1px solid var(--picker-border-color);
     }
   }
 }

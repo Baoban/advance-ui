@@ -1,6 +1,12 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
 @import "./button.css";
+
+:root {
+  --dropdown-menu-box-shadow: var(--box-shadow-dark);
+  --dropdown-menuItem-hover-fill: var(--color-black);
+  --dropdown-menuItem-hover-color: var(--link-color);
+}
 
 @component-namespace el {
   @b dropdown {

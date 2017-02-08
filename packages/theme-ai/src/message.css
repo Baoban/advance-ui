@@ -1,5 +1,19 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --message-shadow: var(--box-shadow-base);
+  --message-min-width: 300px;
+  --message-padding: 10px 12px;
+  --message-content-color: var(--border-color-hover);
+  --message-close-color: var(--color-black);
+  --message-close-hover-color: var(--color-black);
+
+  --message-success-color: var(--color-success);
+  --message-info-color: var(--color-info);
+  --message-warning-color: var(--color-warning);
+  --message-danger-color: var(--color-danger);
+}
 
 @component-namespace el {
 

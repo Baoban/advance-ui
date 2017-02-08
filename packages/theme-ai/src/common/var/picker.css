@@ -1,0 +1,13 @@
+:root {
+  --picker-color: var(--link-color);
+  --picker-off-color: #dddddd;
+  --picker-header-color: var(--border-color-hover);
+  --picker-icon-color: var(--color-black);
+  --picker-border-color: #cccccc;
+  --picker-inner-border-color: #e4e4e4;
+  --picker-cell-hover-color: var(--color-black);
+  --picker-inrange-color: tint(var(--color-primary), 0.8);
+  --picker-inrange-hover-color: tint(var(--color-primary), 0.64);
+  --picker-active-color: var(--color-primary);
+  --picker-text-hover-color: var(--color-primary);
+}

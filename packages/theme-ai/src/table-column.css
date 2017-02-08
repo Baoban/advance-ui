@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "./checkbox.css";
 @import "./tag.css";
-@import "./common/var.css";
+@import "./common/var/base.css";
 
 @component-namespace el {
   @b table-column {

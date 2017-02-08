@@ -1,5 +1,8 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+}
 
 @component-namespace el {
   @b step {

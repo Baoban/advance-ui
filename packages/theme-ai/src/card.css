@@ -1,5 +1,11 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --card-border-color: #cccccc;
+  --card-border-radius: 4px;
+  --card-padding: 20px;
+}
 
 @component-namespace el {
   @b card {

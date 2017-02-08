@@ -1,13 +1,27 @@
 @charset "UTF-8";
 @import "./select.css";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --pagination-font-size: 13px;
+  --pagination-fill: var(--color-white);
+  --pagination-color: var(--link-color);
+  --pagination-border-radius: 2px;
+  --pagination-button-color: var(--color-black);
+  --pagination-button-size: 28px;
+  --pagination-button-disabled-color: #e4e4e4;
+  --pagination-button-disabled-fill: var(--color-white);
+  --pagination-border-color: #cccccc;
+  --pagination-hover-fill: var(--color-primary);
+  --pagination-hover-color: var(--color-white);
+}
 
 @component-namespace el {
   @b pagination {
     white-space: nowrap;
     padding: 2px 5px;
     color: var(--pagination-color);
-    @utils-clearfix;
+    @utils-clearfix ;
 
     span,
     button {
@@ -141,7 +155,9 @@
       &:focus {
         outline: none;
         border-color: var(--pagination-hover-fill);
-      };
+      }
+
+    ;
     }
   }
 

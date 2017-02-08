@@ -1,6 +1,18 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
 @import "./common/popup.css";
+
+:root {
+  --dialog-background-color: var(--color-black);
+  --dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --dialog-tiny-width: 30%;
+  --dialog-small-width: 50%;
+  --dialog-large-width: 90%;
+  --dialog-close-color: var(--color-black);
+  --dialog-close-hover-color: var(--color-primary);
+  --dialog-title-font-size: 16px;
+  --dialog-font-size: 14px;
+}
 
 @component-namespace el {
 

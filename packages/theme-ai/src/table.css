@@ -1,7 +1,13 @@
 @charset "UTF-8";
 @import "./checkbox.css";
 @import "./tag.css";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --table-border-color: color(var(--border-color-base) h(-3) s(27%) l(90%));
+  --table-text-color: var(--color-black);
+  --table-header-background: var(--color-black);
+}
 
 @component-namespace el {
 

@@ -1,8 +1,22 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
 @import "./common/popup.css";
 @import "./button.css";
 @import "./input.css";
+
+:root {
+  --msgbox-width: 420px;
+  --msgbox-border-radius: 3px;
+  --msgbox-font-size: 16px;
+  --msgbox-content-font-size: 14px;
+  --msgbox-content-color: var(--link-color);
+  --msgbox-error-font-size: 12px;
+
+  --msgbox-success-color: var(--color-success);
+  --msgbox-info-color: var(--color-info);
+  --msgbox-warning-color: var(--color-warning);
+  --msgbox-danger-color: var(--color-danger);
+}
 
 @component-namespace el {
 
