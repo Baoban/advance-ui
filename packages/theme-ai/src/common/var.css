@@ -226,18 +226,6 @@
   -------------------------- */
   --cascader-height: 200px;
 
-  /* Switch
- -------------------------- */
-  --switch-on-color: var(--color-primary);
-  --switch-off-color: var(--color-black);
-  --switch-disabled-color: var(--color-black);
-  --switch-disabled-text-color: var(--color-white);
-
-  --switch-font-size: var(--font-size-base);
-  --switch-core-border-radius: 12px;
-  --switch-width: 46px;
-  --switch-height: 22px;
-  --switch-button-size: 16px;
 
   /* Dialog
  -------------------------- */
