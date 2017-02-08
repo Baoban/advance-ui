@@ -73,6 +73,7 @@
     }
 
     h1 {
+      padding-top: 20px;
       margin: 0;
       float: left;
       font-size: 32px;
