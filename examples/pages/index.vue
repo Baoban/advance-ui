@@ -1,4 +1,97 @@
-<style scoped>
+<template>
+  <div>
+    <div class="banner">
+      <div class="banner-sky"></div>
+      <img class="banner-stars" src="~examples/assets/images/stars.png" alt="Element">
+      <div class="container">
+        <div class="banner-desc">
+          <h2>A Desktop UI Library</h2>
+          <div id="line2" class="actor"></div>
+          <p>Element, a Vue 2.0 based component library for developers, designers and product managers, with a set of design resources.</p>
+        </div>
+        <img src="~examples/assets/images/banner-bg.svg" alt="Element">
+      </div>
+    </div>
+    <div class="cards">
+      <ul class="container">
+        <li>
+          <div class="card">
+            <img src="~examples/assets/images/guide.png" alt="">
+            <h3>Guide</h3>
+            <p>Understand the design guidelines, helping designers build product that's logically sound, reasonably structured and easy to use.</p>
+            <router-link
+              active-class="active"
+              to="/en-US/guide/design"
+              exact>View Detail
+            </router-link>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="~examples/assets/images/component.png" alt="">
+            <h3>Component</h3>
+            <p>Experience interaction details by strolling through component demos. Use encapsulated code to improve developing efficiency.</p>
+            <router-link
+              active-class="active"
+              to="/en-US/component/layout"
+              exact>View Detail
+            </router-link>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="~examples/assets/images/resource.png" alt="">
+            <h3>Resource</h3>
+            <p>Download relevant design resources for shaping page prototype or visual draft, increasing design efficiency.</p>
+            <router-link
+              active-class="active"
+              to="/en-US/resource"
+              exact>View Detail
+            </router-link>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+<script lang="babel">
+  import theaterJS from 'theaterjs';
+
+  export default {
+    mounted() {
+      function typing(theater) {
+        theater
+          .addScene('product designer', 1800, -16, 800)
+          .addScene('UI designer', 1800, -11, 800)
+          .addScene('UX designer', 1800, -11, 800)
+          .addScene('product manager', 1800, -15, 800)
+          .addScene('FE developer', 1800, -12, 800)
+          .addScene((done) => {
+            typing(theater);
+            done();
+          });
+      }
+      var theater = theaterJS({ maxSpeed: 100 });
+      theater
+        .on('type:start, erase:start', function() {
+          theater.getCurrentActor().$element.classList.add('typing');
+        })
+        .on('type:end, erase:end', function() {
+          theater.getCurrentActor().$element.classList.remove('typing');
+        });
+      theater
+        .addActor('line2', { speed: 1, accuracy: 1 })
+        .addScene(2600)
+        .addScene('line2:Just for ', 500)
+        .addScene((done) => {
+          typing(theater);
+          done();
+        });
+    }
+  };
+</script>
+
+<style lang="postcss" scoped>
   .actor {
     min-height: 65px;
 
@@ -47,12 +140,12 @@
   .banner-desc {
     padding-top: 110px;
     padding-left: 30px;
-    font-size: <%= theatreSize >px;
+    font-size: 42px;
     position: relative;
     z-index: 10;
 
     h2 {
-      font-size: <%= titleSize >px;
+      font-size: 50px;
       margin: 0;
     }
 
@@ -60,7 +153,7 @@
       font-size: 14px;
       opacity: .8;
       width: 420px;
-      line-height: <%= paraHeight >;
+      line-height: 1.6;
       padding-left: 3px;
     }
   }
@@ -113,7 +206,7 @@
       font-size: 14px;
       color: #99a9bf;
       padding: 0 25px;
-      line-height: <%= paraHeight >;
+      line-height: 1.6;
     }
     a {
       height: 53px;
@@ -201,89 +294,3 @@
     }
   }
 </style>
-<template>
-  <div>
-    <div class="banner">
-      <div class="banner-sky"></div>
-      <img class="banner-stars" src="~examples/assets/images/stars.png" alt="Element">
-      <div class="container">
-        <div class="banner-desc">
-          <h2><%= 1 ></h2>
-          <div id="line2" class="actor"></div>
-          <p><%= 2 ></p>
-        </div>
-        <img src="~examples/assets/images/banner-bg.svg" alt="Element">
-      </div>
-    </div>
-    <div class="cards">
-      <ul class="container">
-        <li>
-          <div class="card">
-            <img src="~examples/assets/images/guide.png" alt="">
-            <h3><%= 3 ></h3>
-            <p><%= 4 ></p>
-            <router-link
-              active-class="active"
-              to="/<%= lang >/guide/design"
-              exact><%= 5 >
-            </router-link>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <img src="~examples/assets/images/component.png" alt="">
-            <h3><%= 6 ></h3>
-            <p><%= 7 ></p>
-            <router-link
-              active-class="active"
-              to="/<%= lang >/component/layout"
-              exact><%= 5 >
-            </router-link>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <img src="~examples/assets/images/resource.png" alt="">
-            <h3><%= 8 ></h3>
-            <p><%= 9 ></p>
-            <router-link
-              active-class="active"
-              to="/<%= lang >/resource"
-              exact><%= 5 >
-            </router-link>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</template>
-<script>
-  import theaterJS from 'theaterjs';
-
-  export default {
-    mounted() {
-      function typing(theater) {
-        theater
-          <%= typingFunc >
-          .addScene((done) => {
-            typing(theater);
-            done();
-          });
-      }
-      var theater = theaterJS(<%= theatreParam >);
-      theater
-        .on('type:start, erase:start', function() {
-          theater.getCurrentActor().$element.classList.add('typing');
-        })
-        .on('type:end, erase:end', function() {
-          theater.getCurrentActor().$element.classList.remove('typing');
-        });
-      theater
-        <%= typingInvoke >
-        .addScene((done) => {
-          typing(theater);
-          done();
-        });
-    }
-  };
-</script>

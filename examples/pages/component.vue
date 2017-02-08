@@ -1,12 +1,39 @@
-<style>
+<template>
+  <div class="page-container page-component">
+    <el-row>
+      <el-col :xs="24" :sm="6">
+        <side-nav :data="navsData" base="/component"></side-nav>
+      </el-col>
+      <el-col :xs="24" :sm="18">
+        <router-view class="content"></router-view>
+        <footer-nav></footer-nav>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+
+<script lang="babel">
+  import navsData from '../nav.config.json';
+
+  export default {
+    data() {
+      return {
+        navsData: navsData,
+      };
+    }
+  };
+</script>
+
+<style lang="postcss">
   .page-component {
     padding-bottom: 95px;
     box-sizing: border-box;
   }
+
   .page-component {
     .content {
       margin-left: -1px;
-      
+
       > {
         h3 {
           margin: 45px 0 15px;
@@ -18,7 +45,7 @@
           color: #5e6d82;
           font-size: 14px;
           margin-bottom: 45px;
-          
+
           strong {
             font-weight: normal;
           }
@@ -41,27 +68,3 @@
     }
   }
 </style>
-<template>
-  <div class="page-container page-component">
-    <el-row>
-      <el-col :xs="24" :sm="6">
-        <side-nav :data="navsData[lang]" :base="`/${ lang }/component`"></side-nav>
-      </el-col>
-      <el-col :xs="24" :sm="18">
-        <router-view class="content"></router-view>
-        <footer-nav></footer-nav>
-      </el-col>
-    </el-row>
-  </div>
-</template>
-<script>
-  import navsData from '../../nav.config.json';
-  export default {
-    data() {
-      return {
-        lang: this.$route.meta.lang,
-        navsData
-      };
-    }
-  };
-</script>

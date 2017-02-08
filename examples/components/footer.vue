@@ -2,22 +2,12 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-main">
-        <p class="footer-main-title">Element {{ version }} Helium</p>
-        <a href="https://github.com/ElemeFE/element/issues" class="footer-main-link" target="_blank">{{ langConfig.feedback }}</a>
-        <a href="https://github.com/ElemeFE/element/blob/master/.github/CONTRIBUTING.md" class="footer-main-link" target="_blank">{{ langConfig.contribution }}</a>
+        <p class="footer-main-title">Advance-UI</p>
+        <a href="https://github.com/ElemeFE/element/issues" class="footer-main-link" target="_blank"> Feedback </a>
+        <a href="https://github.com/ElemeFE/element/blob/master/.github/CONTRIBUTING.md" class="footer-main-link" target="_blank"> Contribution </a>
       </div>
       <div class="footer-social">
-        <el-popover
-          ref="weixin"
-          placement="top"
-          width="120"
-          popper-class="footer-popover"
-          trigger="hover">
-          <div class="footer-popover-title">{{ langConfig.eleme }} UED</div>
-          <img src="../assets/images/qrcode.png" alt="">
-        </el-popover>
-        <i class="doc-icon-weixin elementdoc" v-popover:weixin></i>
-        <a href="//github.com/elemefe" target="_blank">
+        <a href="//github.com/baoban/advance-ui" target="_blank">
           <i class="doc-icon-github elementdoc"></i>
         </a>
       </div>
@@ -25,7 +15,11 @@
   </footer>
 </template>
 
-<style>
+<script type="babel">
+</script>
+
+
+<style lang="postcss">
   .footer {
     height: 120px;
     background-color: #324057;
@@ -131,26 +125,3 @@
     }
   }
 </style>
-
-<script type="text/babel">
-  import compoLang from '../i18n/component.json';
-  import { version } from 'main/index.js';
-
-  export default {
-    data() {
-      return {
-        version
-      };
-    },
-
-    computed: {
-      lang() {
-        return this.$route.path.split('/')[1];
-      },
-
-      langConfig() {
-        return compoLang.filter(config => config.lang === this.lang)[0]['footer'];
-      }
-    }
-  };
-</script>

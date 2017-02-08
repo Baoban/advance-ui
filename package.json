@@ -9,14 +9,13 @@
     "packages"
   ],
   "scripts": {
-    "build:file": "node build/bin/build-icon.js & node build/bin/build-entry.js & node build/bin/i18n.js",
+    "build:file": "node build/bin/build-icon.js & node build/bin/build-entry.js",
     "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-ai/gulpfile.js && cp-cli packages/theme-ai/lib lib/theme-ai",
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
     "dev": "npm run build:file && cooking watch -c build/cooking.demo.js -p",
     "dist": "npm run clean && npm run build:file && npm run lint && cooking build -c build/cooking.conf.js,build/cooking.common.js,build/cooking.component.js -p && npm run build:utils && npm run build:theme",
     "dist:all": "node build/bin/build-all.js && npm run build:theme",
-    "i18n": "node build/bin/i18n.js",
     "lint": "eslint src/**/* test/**/* packages/**/*.{js,vue} build/**/* --quiet",
     "test": "npm run lint && cross-env CI_ENV=/dev/ karma start test/unit/karma.conf.js --single-run",
     "test:watch": "karma start test/unit/karma.conf.js"

@@ -15,7 +15,7 @@ function convert (str) {
 
 cooking.set({
   entry: isProd ? {
-      docs: './examples/entry.js',
+      'docs': './examples/entry.js',
       'advance-ui': './src/index.js'
     } : './examples/entry.js',
   dist: './examples/advance-ui/',
@@ -113,8 +113,6 @@ if (isProd) {
   cooking.add('externals.vue-router', 'VueRouter');
 }
 
-cooking.add('plugin.CopyWebpackPlugin', new CopyWebpackPlugin([
-  { from: 'examples/versions.json' }
-]));
+cooking.add('plugin.CopyWebpackPlugin', new CopyWebpackPlugin([]));
 cooking.add('vue.preserveWhitespace', false);
 module.exports = cooking.resolve();
