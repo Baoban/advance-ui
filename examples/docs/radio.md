@@ -13,6 +13,7 @@
   };
 </script>
 
+
 ## Radio
 
 Single selection among multiple options.
@@ -65,7 +66,7 @@ Radio should not have too many options. Otherwise, use the Select component inst
 
 ### Radio button group
 
-Suitable for choosing from some mutually exclusive options. 
+Suitable for choosing from some mutually exclusive options.
 
 :::demo Combine `<el-radio-group>` with `<el-radio>` to display a radio group. Bind a variable with `v-model` of `<el-radio-group>` element and set label value in `<el-radio>`. It also provides `change` event with the current value as its parameter.
 
@@ -131,15 +132,15 @@ Radio with button styles.
 
 ### Radio Attributes
 
- Attribute      | Description          | Type      | Accepted Values       | Default  
+ Attribute      | Description          | Type      | Accepted Values       | Default
 ---- | ---- | ---- | ---- | ----
 label | the value of radio | string/number | — | —
 disabled | whether radio is disabled | boolean | — | false
-name | native 'name' attribute | string    |      —         |     —   
+name | native 'name' attribute | string    |      —         |     —
 
 ### Radio-group Attributes
 
- Attribute      | Description          | Type      | Accepted Values       | Default  
+ Attribute      | Description          | Type      | Accepted Values       | Default
 ---- | ---- | ---- | ---- | ----
 size | the size of radio buttons | string | large/small | —
 fill  | border and background color when button is active | string   | — | #20a0ff   |
@@ -153,7 +154,7 @@ change | triggers when the bound value changes | the label value of the chosen r
 
 ### Radio-button Attributes
 
- Attribute      | Description          | Type      | Accepted Values       | Default  
+ Attribute      | Description          | Type      | Accepted Values       | Default
 ---- | ---- | ---- | ---- | ----
 label | the value of radio | string/number | — | —
 disabled | whether radio is disabled | boolean | — | false

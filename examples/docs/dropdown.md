@@ -10,11 +10,52 @@
     }
   }
 </script>
-## Dropdown 
+
+<style>
+  .demo-box {
+    .el-dropdown {
+      vertical-align: top;
+
+      & + .el-dropdown {
+        margin-left: 15px;
+      }
+    }
+    .el-dropdown-link {
+      cursor: pointer;
+      color: #20a0ff;
+    }
+    .el-icon-caret-bottom {
+      font-size: 12px;
+    }
+  }
+
+  .block-col-2 {
+    margin: -24px;
+
+    .el-col {
+      padding: 30px 0;
+      text-align: center;
+      border-right: 1px solid #eff2f6;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+ .demo-dropdown .demonstration {
+   display: block;
+   color: #8492a6;
+   font-size: 14px;
+   margin-bottom: 20px;
+ }
+</style>
+
+## Dropdown
 Toggleable menu for displaying lists of links and actions.
 
 ### Basic usage
-Hover on the dropdown menu to unfold it for more actions. 
+Hover on the dropdown menu to unfold it for more actions.
 
 :::demo The triggering element is rendered by the default `slot`, and the dropdown part is rendered by the `slot` named `dropdown`. By default, dropdown list shows when you hover on the triggering element without having to click it.
 

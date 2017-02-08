@@ -30,7 +30,7 @@
             this.$message({
               message: 'Delete canceled',
               type: 'info'
-            });  
+            });
           }, 200);
         });
       },
@@ -93,6 +93,9 @@
   };
 </script>
 
+<style>
+</style>
+
 ## MessageBox
 
 A set of modal boxes simulating system message box, mainly for message prompt, success tips, error messages and query information.
@@ -132,7 +135,7 @@ Alert interrupts user operation until the user confirms.
 
 Confirm is used to ask users' confirmation.
 
-:::demo Call `$confirm` method to open a confirm, and it simulates the system's `confirm`. We can also highly customize Message Box by passing a third attribute `options` which is a literal object. The attribute `type` indicates the message type, and it's value can be `success`, `error`, `info` and `warning`. Note that the second attribute `title` must be a `string`, and if it is an `object`, it will be handled as the attribute `options`. Here we use `Promise` to handle further processing. 
+:::demo Call `$confirm` method to open a confirm, and it simulates the system's `confirm`. We can also highly customize Message Box by passing a third attribute `options` which is a literal object. The attribute `type` indicates the message type, and it's value can be `success`, `error`, `info` and `warning`. Note that the second attribute `title` must be a `string`, and if it is an `object`, it will be handled as the attribute `options`. Here we use `Promise` to handle further processing.
 
 ```html
 <template>
@@ -156,7 +159,7 @@ Confirm is used to ask users' confirmation.
           this.$message({
             type: 'info',
             message: 'Delete canceled'
-          });          
+          });
         });
       }
     }
@@ -195,7 +198,7 @@ Prompt is used when user input is required.
           this.$message({
             type: 'info',
             message: 'Input canceled'
-          });       
+          });
         });
       }
     }

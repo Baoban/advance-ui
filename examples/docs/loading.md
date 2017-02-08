@@ -32,6 +32,13 @@
   }
 </script>
 
+<style>
+  .demo-loading .el-table {
+    border: none;
+  }
+</style>
+
+
 ## Loading
 
 Show animation while loading data.

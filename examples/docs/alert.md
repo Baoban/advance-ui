@@ -8,6 +8,16 @@
   }
 </script>
 
+<style>
+  .demo-box.demo-alert .el-alert {
+    margin: 20px 0 0;
+  }
+
+  .demo-box.demo-alert .el-alert:first-child {
+    margin: 0;
+  }
+</style>
+
 ## Alert
 
 Displays important alert messages.

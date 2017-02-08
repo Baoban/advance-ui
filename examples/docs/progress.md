@@ -1,3 +1,15 @@
+<style>
+  .demo-box.demo-progress {
+    .el-progress--line {
+      margin-bottom: 15px;
+      width: 350px;
+    }
+    .el-progress--circle {
+      margin-right: 15px;
+    }
+  }
+</style>
+
 ## Progress
 
 Progress is used to show the progress of current operation, and inform the user the current status.
@@ -34,7 +46,7 @@ In this case the percentage takes no additional space.
 <el-progress type="circle" :percentage="25"></el-progress>
 <el-progress type="circle" :percentage="100" status="success"></el-progress>
 <el-progress type="circle" :percentage="50" status="exception"></el-progress>
-``` 
+```
 :::
 
 ### Attributes

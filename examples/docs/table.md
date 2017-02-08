@@ -209,6 +209,21 @@
   };
 </script>
 
+<style>
+  .el-table .info-row {
+    background: #c9e5f5;
+  }
+
+  .el-table .positive-row {
+    background: #e2f0e4;
+  }
+
+  .demo-table .name-wrapper {
+    display: inline-block;
+  }
+</style>
+
+
 ## Table
 
 Display multiple data with similar format. You can sort, filter, compare your data in a table.

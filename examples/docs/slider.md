@@ -13,7 +13,34 @@
   }
 </script>
 
-## Slider 
+<style>
+  .demo-box.demo-slider .source {
+    padding: 0;
+  }
+
+  .demo-box.demo-slider .block {
+    padding: 30px 24px;
+    overflow: hidden;
+    border-bottom: solid 1px #EFF2F6;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .demo-box.demo-slider .demonstration {
+    font-size: 14px;
+    color: #8492a6;
+    line-height: 44px;
+  }
+
+  .demo-box.demo-slider .demonstration + .el-slider {
+    float: right;
+    width: 70%;
+    margin-right: 20px;
+  }
+</style>
+
+## Slider
 
 Drag the slider within a fixed range.
 
@@ -27,7 +54,7 @@ The current value is displayed when the slider is being dragged.
 <template>
   <div class="block">
     <span class="demonstration">Default value</span>
-    <el-slider v-model="value1"></el-slider>  
+    <el-slider v-model="value1"></el-slider>
   </div>
   <div class="block">
     <span class="demonstration">Customized initial value</span>
@@ -66,7 +93,7 @@ The options can be discrete.
     <el-slider
       v-model="value4"
       :step="10">
-    </el-slider>  
+    </el-slider>
   </div>
   <div class="block">
     <span class="demonstration">Breakpoints displayed</span>
@@ -103,7 +130,7 @@ Set value via a input box.
     <el-slider
       v-model="value6"
       show-input>
-    </el-slider>  
+    </el-slider>
   </div>
 </template>
 

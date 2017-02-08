@@ -1,3 +1,6 @@
+<style>
+</style>
+
 ## Custom theme
 Element uses BEM-styled CSS so that you can override styles easily. But if you need to replace styles at a large scale, e.g. change the theme color from blue to orange or green, maybe overriding them one by one is not a good idea, and this is where our theme customization tool kicks in.
 

@@ -43,6 +43,30 @@
   };
 </script>
 
+
+<style>
+  .demo-box.demo-dialog {
+    .dialog-footer button:first-child {
+      margin-right: 10px;
+    }
+    .full-image {
+      width: 100%;
+    }
+    .el-dialog__wrapper {
+      margin: 0;
+    }
+    .el-select {
+      width: 300px;
+    }
+    .el-input {
+      width: 300px;
+    }
+    .el-button--text {
+      margin-right: 15px;
+    }
+  }
+</style>
+
 ## Dialog
 
 Informs users while preserving the current page state.
@@ -178,7 +202,7 @@ The content of Dialog can be anything, even a table or a form. This example show
 | footer | content of the Dialog footer |
 
 ### Methods
-Each `el-dialog` instance has the following methods that can be used to open/close the instance without explicitly changing the value of `v-model`: 
+Each `el-dialog` instance has the following methods that can be used to open/close the instance without explicitly changing the value of `v-model`:
 
 | Method | Description |
 |------|--------|

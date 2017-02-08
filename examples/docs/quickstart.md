@@ -1,3 +1,6 @@
+<style>
+</style>
+
 ## Quick start
 
 This part walks you through the process of using Element in a webpack project.

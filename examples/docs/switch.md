@@ -10,6 +10,14 @@
   };
 </script>
 
+<style>
+  .demo-box.demo-switch {
+    .el-switch {
+      margin: 20px 20px 20px 0;
+    }
+  }
+</style>
+
 ## Switch
 
 Switch is used for switching between two opposing states.

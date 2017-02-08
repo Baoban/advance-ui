@@ -46,6 +46,7 @@
     width: 480px;
   }
 </style>
+
 ## Card
 Integrate information in a card container.
 
@@ -144,7 +145,7 @@ Display richer content by adding some configs.
     font-size: 13px;
     color: #999;
   }
-  
+
   .bottom {
     margin-top: 13px;
     line-height: 12px;
@@ -165,7 +166,7 @@ Display richer content by adding some configs.
       display: table;
       content: "";
   }
-  
+
   .clearfix:after {
       clear: both
   }

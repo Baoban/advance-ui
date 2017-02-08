@@ -70,7 +70,7 @@
         if (node.data.name === 'region1') {
           hasChild = true;
         } else if (node.data.name === 'region2') {
-          hasChild = false;          
+          hasChild = false;
         } else {
           hasChild = Math.random() > 0.5;
         }
@@ -103,7 +103,19 @@
   };
 </script>
 
-## Tree 
+<style>
+  .leaf {
+    width: 20px;
+    background: #ddd;
+  }
+
+  .folder {
+    width: 20px;
+    background: #888;
+  }
+</style>
+
+## Tree
 
 Display a set of data with hierarchies.
 

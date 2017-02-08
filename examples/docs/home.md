@@ -1,5 +1,3 @@
-# Components Document
-
 <script>
   import { addClass } from 'examples/dom/class.js';
 
@@ -9,3 +7,5 @@
     }
   }
 </script>
+
+# Components Document

@@ -31,6 +31,18 @@
     }
   }
 </script>
+
+<style>
+  .upload-tip {
+    color: #8492a6;
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .demo-box {
+    margin-bottom: 24px;
+  }
+</style>
+
 ## Upload
 
 Upload files by clicking or drag-and-drop
