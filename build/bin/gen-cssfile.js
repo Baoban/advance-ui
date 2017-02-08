@@ -1,27 +1,26 @@
-var fs = require('fs');
-var path = require('path');
-var Components = require('../../components.json');
-var THEMES = [
+var fs = require('fs')
+var path = require('path')
+var Components = require('../../components.json')
+var themes = [
   'theme-ai'
-];
-var BASEPATH = path.resolve(__dirname, '../../packages/');
-Components = Object.keys(Components);
+]
+var basepath = path.resolve(__dirname, '../../packages/')
 
-function fileExists(filePath) {
+function fileExists (filePath) {
   try {
-    return fs.statSync(filePath).isFile();
+    return fs.statSync(filePath).isFile()
   } catch (err) {
-    return false;
+    return false
   }
-};
+}
 
-THEMES.forEach(function(theme) {
-  Components.forEach(function(key) {
-    var fileName = key + '.css';
-    var filePath = path.resolve(BASEPATH, theme, 'src', fileName);
+themes.forEach((theme) => {
+  Object.keys(Components).forEach(function (key) {
+    var fileName = key + '.css'
+    var filePath = path.resolve(basepath, theme, 'src', fileName)
     if (!fileExists(filePath)) {
-      fs.writeFileSync(filePath, '', 'utf8');
-      console.log(theme, ' 创建遗漏的 ', fileName, ' 文件');
+      fs.writeFileSync(filePath, '', 'utf8')
+      console.log(theme, ' 创建遗漏的 ', fileName, ' 文件')
     }
-  });
-});
+  })
+})

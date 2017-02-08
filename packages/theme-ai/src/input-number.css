@@ -34,7 +34,7 @@
       }
 
       @when disabled {
-        color: var(--disabled-border-base);
+        color: #cccccc;
         cursor: not-allowed;
       }
     }
@@ -48,11 +48,11 @@
 
     @when disabled {
       & .el-input-number__increase, .el-input-number__decrease {
-        border-color: var(--disabled-border-base);
-        color: var(--disabled-border-base);
+        border-color: #cccccc;
+        color: #cccccc;
 
         &:hover {
-          color: var(--disabled-border-base);
+          color: #cccccc;
           cursor: not-allowed;
         }
       }

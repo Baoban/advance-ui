@@ -82,9 +82,9 @@
 
     @when disabled {
       .el-input__inner {
-        background-color: var(--disabled-fill-base);
-        border-color: var(--disabled-border-base);
-        color: var(--disabled-color-base);
+        background-color: #cccccc;
+        border-color: #cccccc;
+        color: #999999;
         cursor: not-allowed;
 
         &::placeholder {
@@ -218,9 +218,9 @@
 
     @when disabled {
       .el-textarea__inner {
-        background-color: var(--disabled-fill-base);
-        border-color: var(--disabled-border-base);
-        color: var(--disabled-color-base);
+        background-color: #cccccc;
+        border-color: #cccccc;
+        color: #999999;
         cursor: not-allowed;
 
         &::placeholder {

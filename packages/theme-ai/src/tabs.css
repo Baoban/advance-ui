@@ -58,7 +58,7 @@
       }
 
       @when disabled {
-        color: var(--disabled-color-base);
+        color: #999999;
         cursor: default;
       }
     }

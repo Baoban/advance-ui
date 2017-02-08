@@ -1,6 +1,32 @@
 @charset "UTF-8";
 @import "./common/var.css";
 
+:root {
+  --checkbox-font-size: 14px;
+  --checkbox-color: var(--color-black);
+  --checkbox-input-height: 18px;
+  --checkbox-input-width: 18px;
+  --checkbox-input-border-radius: calc(var(--checkbox-input-height) / 2);
+  --checkbox-input-fill: var(--color-white);
+  --checkbox-input-border: var(--border-base);
+  --checkbox-input-border-color: var(--border-color-base);
+  --checkbox-icon-color: var(--color-white);
+
+  --checkbox-disabled-input-border-color: #cccccc;
+  --checkbox-disabled-input-fill: #cccccc;
+  --checkbox-disabled-icon-color: #cccccc;
+
+  --checkbox-disabled-checked-input-fill: #cccccc;
+  --checkbox-disabled-checked-input-border-color: #cccccc;
+  --checkbox-disabled-checked-icon-color: var(--color-white);
+
+  --checkbox-checked-input-border-color: var(--color-black);
+  --checkbox-checked-input-fill: var(--color-primary);
+  --checkbox-checked-icon-color: var(--color-white);
+
+  --checkbox-input-border-color-hover: var(--color-primary);
+}
+
 @component-namespace el {
 
   @b checkbox {
@@ -35,6 +61,7 @@
             cursor: not-allowed;
           }
         }
+
         &.is-checked {
           .el-checkbox__inner {
             background-color: var(--checkbox-disabled-checked-input-fill);
@@ -45,6 +72,7 @@
             }
           }
         }
+
         &.is-indeterminate {
           .el-checkbox__inner {
             background-color: var(--checkbox-disabled-checked-input-fill);
@@ -55,8 +83,9 @@
             }
           }
         }
+
         & + .el-checkbox__label {
-          color: var(--disabled-color-base);
+          color: #999999;
           cursor: not-allowed;
         }
       }
@@ -105,8 +134,8 @@
       box-sizing: border-box;
       rect: var(--checkbox-input-width) var(--checkbox-input-height) var(--checkbox-input-fill);
       z-index: var(--index-normal);
-      transition: border-color .25s cubic-bezier(.71,-.46,.29,1.46),
-                  background-color .25s cubic-bezier(.71,-.46,.29,1.46);
+      transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46),
+      background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
 
       &:hover {
         border-color: var(--checkbox-input-border-color-hover);
@@ -124,7 +153,7 @@
         top: 1px;
         transform: rotate(45deg) scaleY(0);
         width: 4px;
-        transition: transform .15s cubic-bezier(.71,-.46,.88,.6) .05s;
+        transition: transform .15s cubic-bezier(.71, -.46, .88, .6) .05s;
         transform-origin: center;
       }
     }
