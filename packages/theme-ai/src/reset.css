@@ -1,4 +1,4 @@
-@import './common/var.css';
+@import './common/var/base.css';
 
 @reset-global pc;
 body {
