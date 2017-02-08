@@ -58,7 +58,7 @@
 
   /* Icon
   -------------------------- */
-  --icon-color: #666;
+  --icon-color: var(--border-color-base);
 
   /* Select
   -------------------------- */
@@ -158,42 +158,6 @@
   --notification-info-color: var(--color-info);
   --notification-warning-color: var(--color-warning);
   --notification-danger-color: var(--color-danger);
-
-  /* Input
-  -------------------------- */
-  --input-font-size: var(--font-size-base);
-  --input-color: var(--font-color-base);
-  --input-width: 140px;
-  --input-height: 36px;
-  --input-border: var(--border-base);
-  --input-border-color: var(--border-color-base);
-  --input-border-radius: var(--border-radius-base);
-  --input-border-color-hover: var(--border-color-hover);
-  --input-fill: var(--color-white);
-  --input-fill-disabled: #cccccc;
-  --input-color-disabled: var(--font-color-disabled-base);
-  --input-icon-color: var(--color-black);
-  --input-placeholder-color: var(--color-black);
-  --input-max-width: 314px;
-
-  --input-hover-border: var(--border-color-hover);
-
-  --input-focus-border: var(--color-primary);
-  --input-focus-fill: var(--color-white);
-
-  --input-disabled-fill: #cccccc;
-  --input-disabled-border: #cccccc;
-  --input-disabled-color: #999999;
-  --input-disabled-placeholder-color: var(--color-black);
-
-  --input-large-font-size: 16px;
-  --input-large-height: 42px;
-
-  --input-small-font-size: 13px;
-  --input-small-height: 30px;
-
-  --input-mini-font-size: 12px;
-  --input-mini-height: 22px;
 
   /* Cascader
   -------------------------- */

@@ -1,6 +1,41 @@
 @charset "UTF-8";
 @import "./common/var.css";
 
+:root {
+  --input-width: 140px;
+  --input-height: 24px;
+  --input-font-size: var(--font-size-base);
+  --input-color: var(--font-color-base);
+  --input-border: var(--border-base);
+  --input-border-color: var(--border-color-base);
+  --input-border-radius: 0px;
+  --input-border-color-hover: var(--border-color-hover);
+  --input-fill: var(--color-white);
+  --input-color-disabled: var(--font-color-disabled-base);
+  --input-icon-color: var(--icon-color);
+  --input-placeholder-color: #999999;
+  --input-max-width: 20000px;
+
+  --input-hover-border: var(--border-color-hover);
+
+  --input-focus-border: var(--color-primary);
+  --input-focus-fill: var(--color-white);
+
+  --input-disabled-color: #999999;
+  --input-disabled-fill: #e9e9e9;
+  --input-disabled-border-color: var(--input-border-color);
+  --input-disabled-placeholder-color: var(--input-placeholder-color);
+
+  --input-large-height: 42px;
+  --input-large-font-size: 16px;
+
+  --input-small-height: 30px;
+  --input-small-font-size: 13px;
+
+  --input-mini-height: 22px;
+  --input-mini-font-size: 12px;
+}
+
 @component-namespace el {
   @b input {
     position: relative;
@@ -12,7 +47,7 @@
       appearance: none;
       background-color: var(--color-white);
       background-image: none;
-      border-radius: 4px;
+      border-radius: var(--input-border-radius);
       border: var(--input-border);
       box-sizing: border-box;
       color: var(--input-color);
@@ -82,9 +117,9 @@
 
     @when disabled {
       .el-input__inner {
-        background-color: #cccccc;
-        border-color: #cccccc;
-        color: #999999;
+        background-color: var(--input-disabled-fill);
+        border-color: var(--input-disabled-border-color);
+        color: var(--input-disabled-color);
         cursor: not-allowed;
 
         &::placeholder {
@@ -125,6 +160,7 @@
       vertical-align: middle;
       display: table-cell;
     }
+
     @e append, prepend {
       background-color: var(--color-white);
       color: var(--color-black);
@@ -132,7 +168,7 @@
       display: table-cell;
       position: relative;
       border: var(--border-base);
-      border-radius: 4px;
+      border-radius: var(--input-border-radius);
       padding: 0 10px;
       width: 1%;
       white-space: nowrap;
@@ -152,6 +188,7 @@
         border-top: 0;
         border-bottom: 0;
       }
+
       & .el-button,
       & .el-input {
         font-size: inherit;
@@ -199,7 +236,7 @@
       background-color: var(--color-white);
       background-image: none;
       border: var(--input-border);
-      border-radius: 4px;
+      border-radius: var(--input-border-radius);
       transition: var(--border-transition-base);
 
       &::placeholder {
@@ -218,9 +255,9 @@
 
     @when disabled {
       .el-textarea__inner {
-        background-color: #cccccc;
-        border-color: #cccccc;
-        color: #999999;
+        background-color: var(--input-disabled-fill);
+        border-color: var(--input-disabled-border-color);
+        color: var(--input-disabled-color);
         cursor: not-allowed;
 
         &::placeholder {
