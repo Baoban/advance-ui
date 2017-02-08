@@ -327,21 +327,6 @@
   --card-border-radius: 4px;
   --card-padding: 20px;
 
-  /* Slider
-  --------------------------*/
-  --slider-main-background-color: var(--color-primary);
-  --slider-runway-background-color: var(--color-black);
-  --slider-button-hover-color: shade(var(--color-primary), 0.12);
-  --slider-stop-background-color: var(--color-black);
-  --slider-disable-color: var(--color-black);
-
-  --slider-margin: 16px 0;
-  --slider-border-radius: 3px;
-  --slider-height: 4px;
-  --slider-button-size: 12px;
-  --slider-button-wrapper-size: 36px;
-  --slider-button-wrapper-offset: -16px;
-
   /* Steps
   --------------------------*/
   --steps-border-color: #cccccc;
