@@ -62,5 +62,3 @@ jspm_packages
 
 .idea
 lib
-examples/advance-ui
-fe.element/advance-ui
