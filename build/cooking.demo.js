@@ -14,10 +14,7 @@ function convert (str) {
 }
 
 cooking.set({
-  entry: isProd ? {
-      'docs': './examples/entry.js',
-      'advance-ui': './src/index.js'
-    } : './examples/entry.js',
+  entry: isProd ? { 'docs': './examples/entry.js', 'advance-ui': './src/index.js' } : './examples/entry.js',
   dist: './examples/dist/',
   template: [
     {
@@ -35,9 +32,7 @@ cooking.set({
     publicPath: '/'
   },
   minimize: true,
-  chunk: isProd ? {
-      'common': { name: ['advance-ui', 'manifest'] }
-    } : false,
+  chunk: false,
   extractCSS: true,
   alias: config.alias,
   extends: ['vue2', 'lint'],
