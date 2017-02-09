@@ -9,7 +9,6 @@ const componentRoute = {
 
 function addRoute (page) {
   const component = require(`./docs${page.path}.md`)
-  console.log(component)
   const child = {
     path: page.path.slice(1),
     meta: {
@@ -19,7 +18,6 @@ function addRoute (page) {
     name: 'component-' + (page.title || page.name),
     component: component.default || component
   }
-  console.log(child)
   componentRoute.children.push(child)
 }
 
