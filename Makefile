@@ -16,6 +16,9 @@ release:
 publish: dist
 	npm publish
 
+deploy:
+	npm run deploy
+
 test:
 	npm run test:watch
 
@@ -31,6 +34,7 @@ help:
 	@echo "make dev                   ---  start developing"
 	@echo "make dist                  ---  build and distribute"
 	@echo "make publish               ---  publish to npm"
+	@echo "make deploy               	---  deploy to github pages"
 	@echo "make test                  ---  run tests"
 	@echo "make new-component <name>  ---  create a new component"
 	@echo "make new-lang <lang>       ---  add a new language"
