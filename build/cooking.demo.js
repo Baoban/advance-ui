@@ -18,7 +18,7 @@ cooking.set({
       'docs': './examples/entry.js',
       'advance-ui': './src/index.js'
     } : './examples/entry.js',
-  dist: './examples/advance-ui/',
+  dist: './examples/dist/',
   template: [
     {
       template: './examples/index.tpl',
