@@ -12,7 +12,7 @@
   --radio-input-border-radius: 100%;
   --radio-input-fill: var(--color-white);
   --radio-input-border: var(--border-base);
-  --radio-input-border-color: var(--border-color-base);
+  --radio-input-border-color: var(--color-border);
   --radio-icon-color: var(--color-white);
 
   --radio-disabled-input-border-color: #cccccc;

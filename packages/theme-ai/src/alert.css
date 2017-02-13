@@ -85,7 +85,9 @@
       font-size: var(--alert-close-font-size);
       color: var(--color-white);
       opacity: 1;
-      position: absolute 12px 15px **;
+      position: absolute;
+      top: 12px;
+      right: 15px;
       cursor: pointer;
 
       @when customed {

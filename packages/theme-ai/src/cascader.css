@@ -8,12 +8,12 @@
   --cascader-menu-font-size: var(--font-size-base);
   --cascader-menu-radius: var(--border-radius-base);
   --cascader-menu-border: var(--border-base);
-  --cascader-menu-border-color: var(--border-color-base);
+  --cascader-menu-border-color: var(--color-border);
   --cascader-menu-border-width: var(--border-width-base);
-  --cascader-menu-color: var(--font-color-base);
+  --cascader-menu-color: var(--color-black);
   --cascader-menu-option-color-active: var(--color-black);
   --cascader-menu-option-fill-active: rgba(var(--color-black), 0.12);
-  --cascader-menu-option-color-hover: var(--font-color-base);
+  --cascader-menu-option-color-hover: var(--color-black);
   --cascader-menu-option-fill-hover: rgba(var(--color-black), 0.06);
   --cascader-menu-option-color-disabled: #999;
   --cascader-menu-option-fill-disabled: rgba(var(--color-black), 0.06);

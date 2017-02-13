@@ -9,7 +9,7 @@
   --checkbox-input-border-radius: calc(var(--checkbox-input-height) / 2);
   --checkbox-input-fill: var(--color-white);
   --checkbox-input-border: var(--border-base);
-  --checkbox-input-border-color: var(--border-color-base);
+  --checkbox-input-border-color: var(--color-border);
   --checkbox-icon-color: var(--color-white);
 
   --checkbox-disabled-input-border-color: #cccccc;

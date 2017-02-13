@@ -8,10 +8,10 @@
   --input-border-radius: 0px;
   --input-max-width: 20000px;
 
-  --input-color: var(--font-color-base);
+  --input-color: var(--color-black);
   --input-fill: var(--color-white);
-  --input-border-color: var(--border-color-base);
-  --input-border-color-hover: var(--border-color-base);
+  --input-border-color: var(--color-border);
+  --input-border-color-hover: var(--color-border);
   --input-icon-color: var(--icon-color);
   --input-placeholder-color: #999999;
 
@@ -20,7 +20,7 @@
   --input-disabled-border-color: #cccccc;
   --input-disabled-placeholder-color: var(--input-placeholder-color);
 
-  --input-hover-border: var(--border-color-base);
+  --input-hover-border: var(--color-border);
 
   --input-focus-border: var(--color-primary);
   --input-focus-fill: var(--color-white);

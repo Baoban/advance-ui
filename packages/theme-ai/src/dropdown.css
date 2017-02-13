@@ -5,7 +5,7 @@
 :root {
   --dropdown-menu-box-shadow: var(--box-shadow-dark);
   --dropdown-menuItem-hover-fill: var(--color-black);
-  --dropdown-menuItem-hover-color: var(--link-color);
+  --dropdown-menuItem-hover-color: var(--color-black);
 }
 
 @component-namespace el {

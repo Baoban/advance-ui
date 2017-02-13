@@ -3,25 +3,22 @@
   -------------------------- */
   --color-primary: #71BE2D;
 
-  --color-success: #13ce66;
-  --color-warning: #f7ba2a;
-  --color-danger: #ff4949;
-  --color-info: #50bfff;
+  --color-success: #13CE66;
+  --color-warning: #F7BA2A;
+  --color-danger: #FF4949;
+  --color-info: #50BFFF;
 
-  --color-white: #ffffff;
+  --color-white: #FFFFFF;
   --color-black: #000000;
 
-  /* Link
-  -------------------------- */
-  --link-color: var(--color-black);
-  --link-hover-color: var(--color-primary);
+  --color-border: #CCCCCC;
+  --color-item-hover: #EBF4E2;
 
   /* Border
   -------------------------- */
   --border-width-base: 1px;
   --border-style-base: solid;
-  --border-color-base: #cccccc;
-  --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+  --border-base: var(--border-width-base) var(--border-style-base) var(--color-border);
   --border-radius-base: 2px;
 
   /* Box-shadow
@@ -32,8 +29,6 @@
   /* Font
   -------------------------- */
   --font-size-base: 14px;
-  --font-color-base: var(--color-black);
-  --font-color-disabled-base: #bbb;
 
   /* Size
   -------------------------- */
@@ -47,5 +42,5 @@
 
   /* Icon
   -------------------------- */
-  --icon-color: var(--border-color-base);
+  --icon-color: var(--color-border);
 }

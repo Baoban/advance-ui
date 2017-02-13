@@ -4,9 +4,9 @@
 @import "./common/var/base.css";
 
 :root {
-  --table-border-color: color(var(--border-color-base) h(-3) s(27%) l(90%));
+  --table-border-color: var(--color-border);
   --table-text-color: var(--color-black);
-  --table-header-background: var(--color-black);
+  --table-header-background: #f5f5f5;
 }
 
 @component-namespace el {

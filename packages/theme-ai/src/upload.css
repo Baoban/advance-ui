@@ -76,7 +76,7 @@
       }
       @when finished {
         & a:hover {
-          color: var(--link-hover-color);
+          color: var(--color-primary);
           cursor: pointer;
         }
         &:hover {

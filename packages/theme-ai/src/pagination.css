@@ -5,7 +5,7 @@
 :root {
   --pagination-font-size: 13px;
   --pagination-fill: var(--color-white);
-  --pagination-color: var(--link-color);
+  --pagination-color: var(--color-black);
   --pagination-border-radius: 2px;
   --pagination-button-color: var(--color-black);
   --pagination-button-size: 28px;

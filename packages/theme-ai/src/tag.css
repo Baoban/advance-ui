@@ -3,15 +3,15 @@
 
 :root {
   --tag-padding: 0 5px;
-  --tag-fill: var(--border-color-base);
+  --tag-fill: var(--color-border);
   --tag-color: var(--color-white);
   --tag-close-color: #666;
   --tag-font-size: 12px;
   --tag-border-radius: 4px;
 
-  --tag-gray-fill: var(--color-black);
-  --tag-gray-border: var(--color-black);
-  --tag-gray-color: var(--link-color);
+  --tag-gray-fill: var(--color-white);
+  --tag-gray-border: var(--color-border);
+  --tag-gray-color: var(--color-black);
 
   --tag-primary-fill: rgba(32, 159, 255, 0.10);
   --tag-primary-border: rgba(32, 159, 255, 0.20);

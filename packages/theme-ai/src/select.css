@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "./common/var/base.css";
+@import "./common/var/picker.css";
 @import "./select-dropdown.css";
 @import "./input.css";
 @import "./tag.css";
@@ -8,7 +9,7 @@
 @import "./scrollbar.css";
 
 :root {
-  --select-border-color-hover: var(--border-color-base);
+  --select-border-color-hover: var(--color-border);
   --select-disabled-border: #cccccc;
   --select-font-size: var(--font-size-base);
   --select-close-hover-color: var(--color-black);
@@ -22,10 +23,10 @@
   --select-tag-color: var(--color-white);
   --select-tag-background: var(--color-primary);
 
-  --select-option-color: var(--link-color);
+  --select-option-color: var(--color-black);
   --select-option-disabled-color: var(--color-black);
   --select-option-height: 36px;
-  --select-option-hover-background: var(--color-black);
+  --select-option-hover-background: var(--picker-cell-hover-color);
   --select-option-selected: var(--color-primary);
   --select-option-selected-hover: shade(var(--color-primary), 0.12);
 

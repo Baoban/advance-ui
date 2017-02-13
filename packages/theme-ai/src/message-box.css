@@ -9,7 +9,7 @@
   --msgbox-border-radius: 3px;
   --msgbox-font-size: 16px;
   --msgbox-content-font-size: 14px;
-  --msgbox-content-color: var(--link-color);
+  --msgbox-content-color: var(--color-black);
   --msgbox-error-font-size: 12px;
 
   --msgbox-success-color: var(--color-success);

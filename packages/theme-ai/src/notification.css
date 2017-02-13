@@ -7,7 +7,7 @@
   --notification-shadow: var(--box-shadow-base);
   --notification-icon-size: 40px;
   --notification-font-size: var(--font-size-base);
-  --notification-color: var(--border-color-base);
+  --notification-color: var(--color-border);
   --notification-title-font-size: 16px;
   --notification-title-color: var(--color-black);
 
