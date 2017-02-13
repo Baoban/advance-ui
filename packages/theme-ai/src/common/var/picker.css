@@ -1,7 +1,7 @@
 :root {
   --picker-color: var(--link-color);
   --picker-off-color: #dddddd;
-  --picker-header-color: var(--border-color-hover);
+  --picker-header-color: var(--border-color-base);
   --picker-icon-color: var(--color-black);
   --picker-border-color: #cccccc;
   --picker-inner-border-color: #e4e4e4;

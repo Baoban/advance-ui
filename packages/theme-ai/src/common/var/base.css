@@ -11,10 +11,6 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --disabled-color: #999999;
-  --disabled-fill: #e9e9e9;
-  --disabled-border-color: #999999;
-
   /* Link
   -------------------------- */
   --link-color: var(--color-black);
@@ -25,8 +21,6 @@
   --border-width-base: 1px;
   --border-style-base: solid;
   --border-color-base: #cccccc;
-  --border-color-disabled: #cccccc;
-  --border-color-hover: #cccccc;
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
   --border-radius-base: 2px;
 

@@ -3,7 +3,7 @@
 
 :root {
   --tag-padding: 0 5px;
-  --tag-fill: var(--border-color-hover);
+  --tag-fill: var(--border-color-base);
   --tag-color: var(--color-white);
   --tag-close-color: #666;
   --tag-font-size: 12px;

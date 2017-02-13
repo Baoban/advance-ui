@@ -7,7 +7,7 @@
   --slider-runway-background-color: #dddddd;
   --slider-button-hover-color: var(--color-primary);
   --slider-stop-background-color: #999999;
-  --slider-disable-color: var(--disabled-color);
+  --slider-disable-color: #999999;
 
   --slider-margin: 16px 0;
   --slider-border-radius: 3px;

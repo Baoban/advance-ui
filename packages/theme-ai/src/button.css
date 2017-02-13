@@ -21,17 +21,17 @@
   --button-mini-padding-vertical: 4px;
   --button-mini-padding-horizontal: 4px;
 
-  --button-default-color: var(--color-black);
+  --button-default-color: var(--color-primary);
   --button-default-fill: var(--color-white);
-  --button-default-border: #c4c4c4;
+  --button-default-border: var(--color-primary);
 
-  --button-ghost-color: #666;
+  --button-ghost-color: #666666;
   --button-ghost-fill: transparent;
   --button-ghost-border: none;
 
   --button-disabled-color: var(--color-white);
-  --button-disabled-fill: #999999;
-  --button-disabled-border: #e9e9e9;
+  --button-disabled-fill: #c5c5c5;
+  --button-disabled-border: var(--button-disabled-fill);
 
   --button-primary-border: var(--color-primary);
   --button-primary-color: var(--color-white);
@@ -65,6 +65,7 @@
     cursor: pointer;
     background: var(--button-default-fill);
     border: var(--border-base);
+    border-color: var(--button-default-border);
     color: var(--button-default-color);
     -webkit-appearance: none;
     text-align: center;
@@ -81,12 +82,12 @@
     &:hover,
     &:focus {
       color: var(--color-primary);
-      border-color: @color;
+      border-color: var(--color-primary);
     }
 
     &:active {
       color: shade(var(--color-primary), var(--button-active-shade-percent));
-      border-color: @color;
+      border-color: var(--color-primary);
       outline: none;
     }
 
@@ -118,7 +119,7 @@
 
     @when active {
       color: shade(var(--color-primary), var(--button-active-shade-percent));
-      border-color: @color;
+      border-color: var(--color-primary);
     }
 
     @when disabled {
@@ -128,7 +129,7 @@
         color: var(--button-disabled-color);
         cursor: not-allowed;
         background-image: none;
-        background-color: #e9e9e9;
+        background-color: var(--button-disabled-fill);
         border-color: var(--button-disabled-border);
       }
 
@@ -136,13 +137,13 @@
         background-color: transparent;
       }
 
-      &.is-plain {
+      @when plain {
         &,
         &:hover,
         &:focus {
           background-color: var(--color-white);
-          border-color: var(--color-black);
-          color: var(--color-black);
+          border-color: var(--button-disabled-border);
+          color: var(--button-disabled-border);
         }
       }
     }
@@ -244,7 +245,7 @@
     }
 
     @each $type in (primary, success, warning, danger, info) {
-      .el-button--$ type {
+      .el-button--$type {
         &:first-child {
           border-right-color: rgba(var(--color-white), 0.5);
         }

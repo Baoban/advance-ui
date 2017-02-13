@@ -10,7 +10,7 @@
   --carousel-indicator-height: 2px;
   --carousel-indicator-padding-horizontal: 4px;
   --carousel-indicator-padding-vertical: 12px;
-  --carousel-indicator-out-color: var(--border-color-hover);
+  --carousel-indicator-out-color: var(--border-color-base);
 }
 
 @component-namespace el {

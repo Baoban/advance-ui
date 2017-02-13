@@ -8,7 +8,7 @@
 @import "./scrollbar.css";
 
 :root {
-  --select-border-color-hover: var(--border-color-hover);
+  --select-border-color-hover: var(--border-color-base);
   --select-disabled-border: #cccccc;
   --select-font-size: var(--font-size-base);
   --select-close-hover-color: var(--color-black);
