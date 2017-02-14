@@ -1,3 +1,5 @@
+@import "./base.css";
+
 :root {
   --picker-color: var(--color-black);
   --picker-off-color: #dddddd;

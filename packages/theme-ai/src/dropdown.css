@@ -1,12 +1,8 @@
 @charset "UTF-8";
 @import "./common/var/base.css";
+@import "./common/var/transition.css";
+@import "./common/var/dropdown.css";
 @import "./button.css";
-
-:root {
-  --dropdown-menu-box-shadow: var(--box-shadow-dark);
-  --dropdown-menuItem-hover-fill: var(--color-black);
-  --dropdown-menuItem-hover-color: var(--color-black);
-}
 
 @component-namespace el {
   @b dropdown {
@@ -20,12 +16,13 @@
     }
 
     & .el-dropdown__caret-button {
-      padding: * 5px;
+      padding: 0 5px;
 
       & .el-dropdown__icon {
         padding-left: 0;
       }
     }
+
     @e icon {
       font-size: 12px;
       margin: 0 3px;
@@ -54,6 +51,7 @@
         background-color: var(--dropdown-menuItem-hover-fill);
         color: var(--dropdown-menuItem-hover-color);
       }
+
       @m divided {
         position: relative;
         margin-top: 6px;
