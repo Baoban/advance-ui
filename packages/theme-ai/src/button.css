@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+@import "./common/var/button.css";
 @import './mixins/button';
 
 @component-namespace el {
@@ -10,6 +11,7 @@
     cursor: pointer;
     background: var(--button-default-fill);
     border: var(--border-base);
+    border-color: var(--button-default-border);
     color: var(--button-default-color);
     -webkit-appearance: none;
     text-align: center;
@@ -20,18 +22,18 @@
     & + .el-button {
       margin-left: 10px;
     }
-    
+
     @mixin button-size var(--button-padding-vertical), var(--button-padding-horizontal), var(--button-font-size), var(--button-border-radius);
 
     &:hover,
     &:focus {
       color: var(--color-primary);
-      border-color: @color;
+      border-color: var(--color-primary);
     }
-    
+
     &:active {
       color: shade(var(--color-primary), var(--button-active-shade-percent));
-      border-color: @color;
+      border-color: var(--color-primary);
       outline: none;
     }
 
@@ -52,7 +54,7 @@
         border-color: var(--color-primary);
         color: var(--color-primary);
       }
-      
+
       &:active {
         background: var(--color-white);
         border-color: shade(var(--color-primary), var(--button-active-shade-percent));
@@ -63,7 +65,7 @@
 
     @when active {
       color: shade(var(--color-primary), var(--button-active-shade-percent));
-      border-color: @color;
+      border-color: var(--color-primary);
     }
 
     @when disabled {
@@ -81,13 +83,13 @@
         background-color: transparent;
       }
 
-      &.is-plain {
+      @when plain {
         &,
         &:hover,
         &:focus {
           background-color: var(--color-white);
-          border-color: var(--color-base-gray);
-          color: var(--color-extra-light-silver);
+          border-color: var(--button-disabled-border);
+          color: var(--button-disabled-border);
         }
       }
     }
@@ -105,7 +107,7 @@
         right: -1px;
         bottom: -1px;
         border-radius: inherit;
-        background-color: rgba(255,255,255,.35);
+        background-color: rgba(255, 255, 255, .35);
       }
     }
     @m primary {
@@ -143,6 +145,7 @@
       &:focus {
         color: tint(var(--color-primary), var(--button-hover-tint-percent));
       }
+
       &:active {
         color: shade(var(--color-primary), var(--button-active-shade-percent));
       }
@@ -150,7 +153,7 @@
   }
 
   @b button-group {
-    @utils-clearfix;
+    @utils-clearfix ;
     display: inline-block;
     vertical-align: middle;
 

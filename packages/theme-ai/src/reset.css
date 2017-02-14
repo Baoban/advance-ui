@@ -1,11 +1,12 @@
-@import './common/var.css';
+@import './common/var/base.css';
+@import './common/var/button.css';
 
 @reset-global pc;
 body {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   font-weight: 400;
   font-size: var(--font-size-base);
-  color: var(--color-base-black);
+  color: var(--color-black);
 }
 
 a {
@@ -23,7 +24,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--font-color-base);
+  color: var(--color-black);
   font-weight: inherit;
 
   &:first-child {

@@ -1,6 +1,6 @@
 @import "./date-picker/picker.css";
 @import "./date-picker/date-picker.css";
-@import "./common/var.css";
+@import "./common/var/base.css";
 @import "./scrollbar.css";
 
 .time-select {
@@ -19,7 +19,7 @@
 }
 
 .time-select-item.selected:not(.disabled) {
-  background-color: var(--datepicker-active-color);
+  background-color: var(--picker-active-color);
   color: var(--color-white);
 
   &:hover {
@@ -28,11 +28,11 @@
 }
 
 .time-select-item.disabled {
-  color: var(--datepicker-border-color);
+  color: var(--picker-border-color);
   cursor: not-allowed;
 }
 
 .time-select-item:hover {
-  background-color: var(--datepicker-cell-hover-color);
+  background-color: var(--picker-cell-hover-color);
   cursor: pointer;
 }

@@ -1,11 +1,25 @@
 @charset "UTF-8";
 @import "./input-number.css";
-@import "./tooltip.css";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --slider-main-background-color: var(--color-primary);
+  --slider-runway-background-color: #dddddd;
+  --slider-button-hover-color: var(--color-primary);
+  --slider-stop-background-color: #999999;
+  --slider-disable-color: #999999;
+
+  --slider-margin: 16px 0;
+  --slider-border-radius: 3px;
+  --slider-height: 4px;
+  --slider-button-size: 12px;
+  --slider-button-wrapper-size: 36px;
+  --slider-button-wrapper-offset: -16px;
+}
 
 @component-namespace el {
   @b slider {
-    @utils-clearfix;
+    @utils-clearfix ;
     @e runway {
       width: 100%;
       height: var(--slider-height);
@@ -136,7 +150,7 @@
     @e stop {
       position: absolute;
       size: var(--slider-height);
-      border-radius: var(--border-radius-circle);
+      border-radius: 100%;
       background-color: var(--slider-stop-background-color);
       transform: translateX(-50%);
     }

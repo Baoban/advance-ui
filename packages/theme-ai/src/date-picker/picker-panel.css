@@ -1,9 +1,9 @@
-@import "../common/var.css";
+@import "../common/var/picker.css";
 
 @component-namespace el {
   @b picker-panel {
-    color: var(--datepicker-color);
-    border: 1px solid var(--datepicker-border-color);
+    color: var(--picker-color);
+    border: 1px solid var(--picker-border-color);
     box-shadow: 0 2px 6px #ccc;
     background: var(--color-white);
     border-radius: 2px;
@@ -24,7 +24,7 @@
     }
 
     @e footer {
-      border-top: 1px solid var(--datepicker-inner-border-color);
+      border-top: 1px solid var(--picker-inner-border-color);
       padding: 4px;
       text-align: right;
       background-color: var(--color-white);
@@ -38,19 +38,19 @@
       background-color: transparent;
       line-height: 28px;
       font-size: 14px;
-      color: var(--datepicker-color);
+      color: var(--picker-color);
       padding-left: 12px;
       text-align: left;
       outline: none;
       cursor: pointer;
 
       &:hover {
-        background-color: var(--datepicker-cell-hover-color);
+        background-color: var(--picker-cell-hover-color);
       }
 
       &.active {
         background-color: #e6f1fe;
-        color: var(--datepicker-active-color);
+        color: var(--picker-active-color);
       }
     }
 
@@ -73,7 +73,7 @@
 
     @e icon-btn {
       font-size: 12px;
-      color: var(--datepicker-icon-color);
+      color: var(--picker-icon-color);
       border: 0;
       background: transparent;
       cursor: pointer;
@@ -81,7 +81,7 @@
       margin-top: 3px;
 
       &:hover {
-        color: var(--datepicker-text-hover-color);
+        color: var(--picker-text-hover-color);
       }
     }
 
@@ -100,10 +100,10 @@
     top: 0;
     bottom: 0;
     width: 110px;
-    border-right: 1px solid var(--datepicker-inner-border-color);
+    border-right: 1px solid var(--picker-inner-border-color);
     box-sizing: border-box;
     padding-top: 6px;
-    background-color: var(--color-dark-white);
+    background-color: var(--color-white);
   }
 
   .el-picker-panel *[slot=sidebar] + .el-picker-panel__body,

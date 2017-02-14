@@ -1,5 +1,9 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --progress-outer-color: #e5e5e5;
+}
 
 @component-namespace el {
   @b progress {
@@ -8,7 +12,7 @@
 
     @e text {
       font-size:14px;
-      color:var(--color-extra-light-black);
+      color:var(--color-black);
       display: inline-block;
       vertical-align: middle;
       margin-left: 10px;
@@ -81,7 +85,7 @@
     @e outer {
       height: 6px;
       border-radius: 100px;
-      background-color: var(--color-light-gray);
+      background-color: var(--progress-outer-color);
       overflow: hidden;
       position: relative;
       vertical-align: middle;

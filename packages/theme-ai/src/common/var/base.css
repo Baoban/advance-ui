@@ -1,0 +1,46 @@
+:root {
+  /* Colors
+  -------------------------- */
+  --color-primary: #71BE2D;
+
+  --color-success: #13CE66;
+  --color-warning: #F7BA2A;
+  --color-danger: #FF4949;
+  --color-info: #50BFFF;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-border: #CCCCCC;
+  --color-item-hover: #EBF4E2;
+
+  /* Border
+  -------------------------- */
+  --border-width-base: 1px;
+  --border-style-base: solid;
+  --border-base: var(--border-width-base) var(--border-style-base) var(--color-border);
+  --border-radius-base: 2px;
+
+  /* Box-shadow
+  -------------------------- */
+  --box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+  --box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+
+  /* Font
+  -------------------------- */
+  --font-size-base: 14px;
+
+  /* Size
+  -------------------------- */
+  --size-base: 14px;
+
+  /* z-index
+  -------------------------- */
+  --index-normal: 1;
+  --index-top: 1000;
+  --index-popper: 2000;
+
+  /* Icon
+  -------------------------- */
+  --icon-color: var(--color-border);
+}

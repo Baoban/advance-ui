@@ -1,3 +1,5 @@
+@import "../common/var/button.css";
+
 @define-mixin button-variant $color, $background-color, $border-color {
   color: $color;
   background-color: $background-color;
@@ -9,7 +11,7 @@
     border-color: tint($border-color, var(--button-hover-tint-percent));
     color: $color;
   }
-  
+
   &:active {
     background: shade($background-color, var(--button-active-shade-percent));
     border-color: shade($border-color, var(--button-active-shade-percent));
@@ -34,7 +36,7 @@
       border-color: $border-color;
       color: $background-color;
     }
-    
+
     &:active {
       background: var(--color-white);
       border-color: shade($border-color, var(--button-active-shade-percent));

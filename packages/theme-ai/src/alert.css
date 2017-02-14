@@ -1,5 +1,22 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --alert-padding: 8px 16px;
+  --alert-border-radius: var(--border-radius-base);
+  --alert-title-font-size: 13px;
+  --alert-description-font-size: 12px;
+  --alert-close-font-size: 12px;
+  --alert-close-customed-font-size: 13px;
+
+  --alert-success-color: var(--color-success);
+  --alert-info-color: var(--color-info);
+  --alert-warning-color: var(--color-warning);
+  --alert-danger-color: var(--color-danger);
+
+  --alert-icon-size: 16px;
+  --alert-icon-large-size: 28px;
+}
 
 @component-namespace el {
 
@@ -68,7 +85,9 @@
       font-size: var(--alert-close-font-size);
       color: var(--color-white);
       opacity: 1;
-      position: absolute 12px 15px * *;
+      position: absolute;
+      top: 12px;
+      right: 15px;
       cursor: pointer;
 
       @when customed {

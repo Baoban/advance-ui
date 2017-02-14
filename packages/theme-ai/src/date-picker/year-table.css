@@ -1,4 +1,4 @@
-@import "../common/var.css";
+@import "../common/var/picker.css";
 
 @component-namespace el {
   @b year-table {
@@ -7,7 +7,7 @@
     border-collapse: collapse;
 
     .el-icon {
-      color: var(--datepicker-icon-color);
+      color: var(--picker-icon-color);
     }
 
     td {
@@ -26,15 +26,15 @@
         height: 32px;
         display: block;
         line-height: 32px;
-        color: var(--datepicker-color);
+        color: var(--picker-color);
 
         &:hover {
-          background-color: var(--datepicker-cell-hover-color);
+          background-color: var(--picker-cell-hover-color);
         }
       }
 
       &.current .cell {
-        background-color: var(--datepicker-active-color) !important;
+        background-color: var(--picker-active-color) !important;
         color: var(--color-white);
       }
     }

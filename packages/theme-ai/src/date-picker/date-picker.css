@@ -1,4 +1,4 @@
-@import "../common/var.css";
+@import "../common/var/picker.css";
 @import "./picker-panel.css";
 
 @component-namespace el {
@@ -34,7 +34,7 @@
 
     @e time-header {
       position: relative;
-      border-bottom: 1px solid var(--datepicker-inner-border-color);
+      border-bottom: 1px solid var(--picker-inner-border-color);
       font-size: 12px;
       padding: 8px 5px 5px 5px;
       display: table;
@@ -55,11 +55,11 @@
       cursor: pointer;
 
       &:hover {
-        color: var(--datepicker-text-hover-color);
+        color: var(--picker-text-hover-color);
       }
 
       &.active {
-        color: var(--datepicker-active-color);
+        color: var(--picker-active-color);
       }
     }
 

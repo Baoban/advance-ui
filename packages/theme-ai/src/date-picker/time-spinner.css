@@ -1,4 +1,4 @@
-@import "../common/var.css";
+@import "../common/var/picker.css";
 
 @component-namespace el {
   @b time-spinner {
@@ -42,7 +42,7 @@
       font-size: 12px;
 
       &:hover:not(.disabled):not(.active) {
-        background: var(--datepicker-cell-hover-color);
+        background: var(--picker-cell-hover-color);
         cursor: pointer;
       }
 
@@ -51,7 +51,7 @@
       }
 
       &.disabled {
-        color: var(--datepicker-border-color);
+        color: var(--picker-border-color);
         cursor: not-allowed;
       }
     }

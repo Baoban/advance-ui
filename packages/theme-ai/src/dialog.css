@@ -1,6 +1,18 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
 @import "./common/popup.css";
+
+:root {
+  --dialog-background-color: var(--color-black);
+  --dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --dialog-tiny-width: 30%;
+  --dialog-small-width: 50%;
+  --dialog-large-width: 90%;
+  --dialog-close-color: var(--color-black);
+  --dialog-close-hover-color: var(--color-primary);
+  --dialog-title-font-size: 16px;
+  --dialog-font-size: 14px;
+}
 
 @component-namespace el {
 
@@ -9,7 +21,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--color-white);
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius-base);
     box-shadow: var(--dialog-box-shadow);
     box-sizing: border-box;
 
@@ -55,12 +67,12 @@
       line-height: 1;
       font-size: var(--dialog-title-font-size);
       font-weight: bold;
-      color: var(--color-base-black);
+      color: var(--color-black);
     }
 
     @e body {
       padding: 30px 20px;
-      color: var(--color-extra-light-black);
+      color: var(--color-black);
       font-size: var(--dialog-font-size);
     }
 

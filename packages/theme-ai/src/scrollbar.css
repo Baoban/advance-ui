@@ -1,5 +1,10 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --scrollbar-background-color: rgba(var(--color-black), .3);
+  --scrollbar-hover-background-color: rgba(var(--color-black), .5);
+}
 
 @component-namespace el {
   @b scrollbar {

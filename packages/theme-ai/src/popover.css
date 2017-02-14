@@ -1,5 +1,16 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+@import "./common/var/tooltip.css";
+
+:root {
+  --popover-fill: var(--color-white);
+  --popover-font-size: 12px;
+  --popover-border-color: #cccccc;
+  --popover-arrow-size: 6px;
+  --popover-padding: 10px;
+  --popover-title-font-size: 13px;
+  --popover-title-color: var(--color-black);
+}
 
 @component-namespace el {
   @b popover {

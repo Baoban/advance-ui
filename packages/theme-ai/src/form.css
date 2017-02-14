@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
 
 @component-namespace el {
   @b form {
@@ -40,7 +40,7 @@
       vertical-align: middle;
       float: left;
       font-size: 14px;
-      color: var(--color-extra-light-black);
+      color: var(--color-black);
       line-height: 1;
       padding: 11px 12px 11px 0;
       box-sizing: border-box;

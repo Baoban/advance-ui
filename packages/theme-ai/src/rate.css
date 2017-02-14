@@ -1,5 +1,13 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --rate-height: 20px;
+  --rate-font-size: var(--font-size-base);
+  --rate-icon-size: 18px;
+  --rate-icon-margin: 6px;
+  --rate-icon-color: var(--color-black);
+}
 
 @component-namespace el {
 

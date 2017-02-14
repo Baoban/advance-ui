@@ -1,5 +1,24 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --notification-width: 330px;
+  --notification-padding: 20px;
+  --notification-shadow: var(--box-shadow-base);
+  --notification-icon-size: 40px;
+  --notification-font-size: var(--font-size-base);
+  --notification-color: var(--color-border);
+  --notification-title-font-size: 16px;
+  --notification-title-color: var(--color-black);
+
+  --notification-close-color: var(--color-black);
+  --notification-close-hover-color: var(--color-black);
+
+  --notification-success-color: var(--color-success);
+  --notification-info-color: var(--color-info);
+  --notification-warning-color: var(--color-warning);
+  --notification-danger-color: var(--color-danger);
+}
 
 @component-namespace el {
 
@@ -7,7 +26,7 @@
     width: var(--notification-width);
     padding: var(--notification-padding);
     box-sizing: border-box;
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius-base);
     position: fixed;
     right: 16px;
     background-color: var(--color-white);
@@ -45,7 +64,7 @@
     }
 
     @e closeBtn {
-      position: absolute 20px 20px * *;
+      position: absolute 20px 20px **;
       cursor: pointer;
       color: var(--notification-close-color);
       font-size: var(--notification-font-size);

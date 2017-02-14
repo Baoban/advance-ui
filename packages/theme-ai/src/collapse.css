@@ -1,5 +1,18 @@
 @charset "UTF-8";
-@import "./common/var.css";
+@import "./common/var/base.css";
+
+:root {
+  --collapse-border-color: color(var(--color-border) h(-3) s(27%) l(90%));
+  --collapse-header-height: 43px;
+  --collapse-border-radius: 0;
+  --collapse-header-padding: 20px;
+  --collapse-header-fill: var(--color-white);
+  --collapse-header-color: var(--color-black);
+  --collapse-header-size: 13px;
+  --collapse-content-fill: var(--color-white);
+  --collapse-content-size: 13px;
+  --collapse-content-color: var(--color-black);
+}
 
 @component-namespace el {
   @b collapse {
