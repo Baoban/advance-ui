@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "./common/var/base.css";
+@import "./common/var/tooltip.css";
 
 :root {
   --popover-fill: var(--color-white);

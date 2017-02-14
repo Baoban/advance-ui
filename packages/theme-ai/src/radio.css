@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "./common/var/base.css";
+@import "./common/var/transition.css";
 @import './mixins/button';
 
 :root {

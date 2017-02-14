@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "common/var/input.css";
+@import "common/var/transition.css";
 
 @component-namespace el {
   @b input {
