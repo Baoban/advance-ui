@@ -5,13 +5,14 @@
 
   --color-success: #13CE66;
   --color-warning: #F7BA2A;
-  --color-danger: #FF4949;
+  --color-danger: #F06655;
   --color-info: #50BFFF;
 
   --color-white: #FFFFFF;
   --color-black: #000000;
 
-  --color-border: #CCCCCC;
+  --color-border: #DEDEDE;
+  --color-font: #101010;
   --color-item-hover: #EBF4E2;
 
   /* Border
@@ -39,8 +40,4 @@
   --index-normal: 1;
   --index-top: 1000;
   --index-popper: 2000;
-
-  /* Icon
-  -------------------------- */
-  --icon-color: var(--color-border);
 }

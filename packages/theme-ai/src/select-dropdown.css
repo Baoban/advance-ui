@@ -17,7 +17,7 @@
 
     @when multiple {
       & .el-select-dropdown__item.selected {
-        color: var(--select-option-selected);
+        color: var(--select-option-selected-color);
         background-color: var(--select-dropdown-background);
 
         &.hover {

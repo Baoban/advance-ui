@@ -3,11 +3,11 @@
 @import "./common/var/base.css";
 
 :root {
-  --pagination-font-size: 13px;
+  --pagination-font-size: 14px;
   --pagination-fill: var(--color-white);
-  --pagination-color: var(--color-black);
+  --pagination-color: #999999;
   --pagination-border-radius: 2px;
-  --pagination-button-color: var(--color-black);
+  --pagination-button-color: var(--pagination-color);
   --pagination-button-size: 28px;
   --pagination-button-disabled-color: #e4e4e4;
   --pagination-button-disabled-fill: var(--color-white);
@@ -95,9 +95,9 @@
       .el-pager li,
       .el-pager li:last-child {
         border-color: transparent;
-        font-size: 12px;
-        line-height: 22px;
-        height: 22px;
+        font-size: 13px;
+        line-height: 26px;
+        height: 26px;
         min-width: 22px;
       }
 
@@ -107,6 +107,11 @@
 
       .el-pager li {
         border-radius: var(--pagination-border-radius);
+        &.active {
+          background-color: transparent;
+          color: var(--color-primary);
+          border-color: transparent;
+        }
       }
     }
 

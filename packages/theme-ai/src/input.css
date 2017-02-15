@@ -48,6 +48,7 @@
       top: 0;
       text-align: center;
       color: var(--input-icon-color);
+      font-size: var(--input-font-size);
       transition: all .3s;
 
       &:after {
@@ -146,13 +147,20 @@
       }
 
       & .el-button,
-      & .el-select .el-input__inner,
-      & .el-select:hover .el-input__inner {
+      & .el-select .el-input__inner {
         border-color: transparent;
         background-color: transparent;
         color: inherit;
-        border-top: 0;
-        border-bottom: 0;
+      }
+
+      & .el-select .el-input__inner {
+        border-color: transparent;
+        background-color: transparent;
+        color: inherit;
+        &:hover,
+        &:focus {
+          border-color: var(--input-hover-border);
+        }
       }
 
       & .el-button,
