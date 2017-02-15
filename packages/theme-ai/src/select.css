@@ -14,6 +14,7 @@
   @b select {
     display: inline-block;
     position: relative;
+    width: 100%;
 
     &:hover {
       .el-input__inner {

@@ -1,7 +1,7 @@
 @import "./base.css";
 
 :root {
-  --select-border-color-hover: var(--color-border);
+  --select-border-color-hover: var(--color-primary);
   --select-disabled-border: #cccccc;
   --select-font-size: var(--font-size-base);
   --select-close-hover-color: var(--color-black);
@@ -19,8 +19,9 @@
   --select-option-disabled-color: var(--color-black);
   --select-option-height: 36px;
   --select-option-hover-background: var(--picker-cell-hover-color);
-  --select-option-selected: var(--color-primary);
-  --select-option-selected-hover: shade(var(--color-primary), 0.12);
+  --select-option-selected-color: var(--color-primary);
+  --select-option-selected-fill: transparent;
+  --select-option-selected-hover: var(--select-option-hover-background);
 
   --select-group-color: #999;
   --select-group-height: 30px;
