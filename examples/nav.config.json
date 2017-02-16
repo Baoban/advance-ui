@@ -160,6 +160,10 @@
           {
             "path": "/steps",
             "title": "Steps"
+          },
+          {
+            "path": "/sidebar",
+            "title": "Sidebar"
           }
         ]
       },
@@ -189,10 +193,6 @@
           {
             "path": "/collapse",
             "title": "Collapse"
-          },
-          {
-            "path": "/sidebar",
-            "title": "Sidebar"
           }
         ]
       }

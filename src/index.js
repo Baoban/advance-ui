@@ -61,6 +61,9 @@ import CarouselItem from '../packages/carousel-item';
 import Collapse from '../packages/collapse';
 import CollapseItem from '../packages/collapse-item';
 import Sidebar from '../packages/sidebar';
+import SidebarItem from '../packages/sidebar-item';
+import SidebarGroup from '../packages/sidebar-group';
+import SidebarSubmenu from '../packages/sidebar-submenu';
 import locale from 'advance-ui/src/locale';
 
 const components = [
@@ -120,7 +123,10 @@ const components = [
   CarouselItem,
   Collapse,
   CollapseItem,
-  Sidebar
+  Sidebar,
+  SidebarItem,
+  SidebarGroup,
+  SidebarSubmenu
 ];
 
 const install = function(Vue, opts = {}) {
@@ -213,5 +219,8 @@ module.exports = {
   CarouselItem,
   Collapse,
   CollapseItem,
-  Sidebar
+  Sidebar,
+  SidebarItem,
+  SidebarGroup,
+  SidebarSubmenu
 };

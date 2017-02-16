@@ -21,7 +21,6 @@
   white-space: nowrap;
 }
 
-/* TODO: refactor using BEM */
 @component-namespace el {
   @b menu {
     border-radius: 2px;

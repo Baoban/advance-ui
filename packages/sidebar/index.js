@@ -1,4 +1,4 @@
-import Sidebar from './src/main';
+import Sidebar from './src/sidebar';
 
 /* istanbul ignore next */
 Sidebar.install = function(Vue) {
