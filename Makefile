@@ -23,7 +23,7 @@ test:
 	npm run test:watch
 
 new-component:
-	node build/bin/new.js $(filter-out $@,$(MAKECMDGOALS))
+	node build/bin/new-component.js $(filter-out $@,$(MAKECMDGOALS))
 
 new-lang:
 	node build/bin/new-lang.js $(filter-out $@,$(MAKECMDGOALS))
