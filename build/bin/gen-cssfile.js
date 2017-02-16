@@ -18,7 +18,7 @@ themes.forEach((theme) => {
   var indexContent = '@import "./base.css";\n'
   Object.keys(Components).forEach(function (key) {
     const fileName = key + '.css'
-    indexContent += `@import "./${fileName}"\n`
+    indexContent += `@import "./${fileName}";\n`
     const filePath = path.resolve(basepath, theme, 'src', fileName)
     if (!fileExists(filePath)) {
       fs.writeFileSync(filePath, '', 'utf8')

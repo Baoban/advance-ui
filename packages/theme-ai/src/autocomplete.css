@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "./input.css";
 @import "./common/var/base.css";
 @import "./common/var/select.css";
 @import "./common/var/picker.css";
+@import "./input.css";
 
 @component-namespace el {
   @b autocomplete {
