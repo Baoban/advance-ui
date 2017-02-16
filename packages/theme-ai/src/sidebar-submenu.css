@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import "./common/var/base.css";
+@import "./common/var/sidebar.css";
+
+@component-namespace el {
+  @b sidebar-submenu {
+    @e title {
+      position: relative;
+      @extend sidebar-item;
+
+      &:hover {
+        background-color: var(--color-item-hover);
+      }
+    }
+    & .el-menu {
+      background-color: inherit;
+    }
+
+    & .el-sidebar-item {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 45px;
+
+      &:hover {
+        background-color: var(--color-item-hover);
+      }
+    }
+
+    @e icon-arrow {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      margin-top: -7px;
+      transition: transform .3s;
+      font-size: 12px;
+    }
+    @when active {
+      .el-submenu__title {
+        border-bottom-color: var(--color-primary);
+      }
+    }
+    @when opened {
+      > .el-submenu__title .el-submenu__icon-arrow {
+        transform: rotateZ(180deg);
+      }
+    }
+    [class^="el-icon-"] {
+      vertical-align: baseline;
+      margin-right: 10px;
+    }
+  }
+}

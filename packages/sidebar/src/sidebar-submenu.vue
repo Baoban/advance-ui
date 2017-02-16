@@ -3,24 +3,12 @@
       'is-active': active,
       'is-opened': opened
     }">
-    <div class="el-submenu__title" ref="submenu-title" :style="paddingStyle">
+    <div class="el-sidebar-submenu__title" ref="submenu-title" :style="paddingStyle">
       <slot name="title"></slot>
-      <i :class="{
-        'el-submenu__icon-arrow': true,
-        'el-icon-arrow-down': rootMenu.mode === 'vertical',
-        'el-icon-caret-bottom': rootMenu.mode === 'horizontal'
-      }">
-      </i>
+      <i class="el-sidebar-submenu__icon-arrow el-icon-arrow-down"></i>
     </div>
-    <template v-if="rootMenu.mode === 'horizontal'">
-      <transition name="el-zoom-in-top">
-        <ul class="el-menu" v-show="opened">
-          <slot></slot>
-        </ul>
-      </transition>
-    </template>
-    <collapse-transition v-else>
-      <ul class="el-menu" v-show="opened">
+    <collapse-transition>
+      <ul class="el-sidebar" v-show="opened">
         <slot></slot>
       </ul>
     </collapse-transition>
@@ -93,7 +81,7 @@
         delete this.submenus[item.index];
       },
       handleClick() {
-        this.dispatch('ElMenu', 'submenu-click', this);
+        this.dispatch('ElSidebar', 'submenu-click', this);
       },
       handleMouseenter() {
         clearTimeout(this.timeout);

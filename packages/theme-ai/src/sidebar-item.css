@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "./common/var/base.css";
+@import "./common/var/sidebar.css";
+
+@component-namespace el {
+  @b sidebar-item {
+    @extend sidebar-item;
+
+    & [class^="el-icon-"] {
+      vertical-align: baseline;
+      margin-right: 10px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: var(--color-black);
+    }
+
+    @when active {
+      color: var(--color-white);
+    }
+  }
+}

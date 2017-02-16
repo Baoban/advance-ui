@@ -39,7 +39,7 @@ Sidebar with sub-menus.
   <el-col :span="8">
     <h5>With icons</h5>
     <el-sidebar default-active="2" class="el-menu-vertical-demo">
-      <el-sidebar-submenu index="1">
+    <el-sidebar-submenu index="1">
         <template slot="title"><i class="el-icon-message"></i>Navigator One</template>
         <el-sidebar-group title="Group One">
           <el-sidebar-item index="1-1">item one</el-sidebar-item>
