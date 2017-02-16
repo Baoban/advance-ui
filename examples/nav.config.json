@@ -189,6 +189,10 @@
           {
             "path": "/collapse",
             "title": "Collapse"
+          },
+          {
+            "path": "/sidebar",
+            "title": "Sidebar"
           }
         ]
       }

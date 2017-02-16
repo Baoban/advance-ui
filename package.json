@@ -9,7 +9,8 @@
     "packages"
   ],
   "scripts": {
-    "new:component": "node build/bin/new-component.js -- && npm run build:file && node build/bin/gen-cssfile",
+    "new:component": "node build/bin/new-component.js",
+    "new:build": "npm run build:file && node build/bin/gen-cssfile",
     "new:lang": "node build/bin/new-lang.js --",
     "build:file": "node build/bin/build-icon.js & node build/bin/build-entry.js",
     "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-ai/gulpfile.js && cp-cli packages/theme-ai/lib lib/theme-ai",
