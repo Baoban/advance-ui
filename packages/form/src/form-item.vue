@@ -2,7 +2,9 @@
   <div class="el-form-item" :class="{
     'is-error': validateState === 'error',
     'is-validating': validateState === 'validating',
-    'is-required': isRequired || required
+    'is-required': isRequired || required,
+    'is-required-mark': markRequired === 1,
+    'is-not-required-mark': markRequired === 2,
   }">
     <label :for="prop" class="el-form-item__label" v-bind:style="labelStyle" v-if="label">
       {{label + form.labelSuffix}}
@@ -56,6 +58,10 @@
       labelWidth: String,
       prop: String,
       required: Boolean,
+      markRequired: {
+        type: Number,
+        default: 0
+      },
       rules: [Object, Array],
       error: String,
       validateStatus: String,

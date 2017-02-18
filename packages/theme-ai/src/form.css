@@ -44,10 +44,8 @@
       line-height: 1;
       padding: 10px 12px 10px 0;
       box-sizing: border-box;
-
-      &::before {
-        content: '\00a0';
-        margin-right: 0;
+      :before {
+        content: '';
       }
     }
     @e content {
@@ -66,9 +64,17 @@
       left: 0;
     }
 
-    @when required {
+    @when required-mark {
       .el-form-item__label:before {
         content: '*';
+        color: inherit;
+        margin-right: 0;
+      }
+    }
+
+    @when not-required-mark {
+      .el-form-item__label:before {
+        content: '\00a0';
         color: inherit;
         margin-right: 0;
       }

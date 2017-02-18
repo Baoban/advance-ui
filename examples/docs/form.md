@@ -51,11 +51,16 @@
           user: '',
           region: ''
         },
-        labelPosition: 'right',
+        labelPosition: 'left',
         formLabelAlign: {
           name: '',
           region: '',
           type: ''
+        },
+        alignmentRules: {
+          name: [
+            { required: true, message: 'Please input Activity name', trigger: 'blur' },
+          ],
         },
         ruleForm: {
           name: '',
@@ -365,14 +370,15 @@ Depending on your design, there are several different ways to align your label e
   <el-radio-button label="top">Top</el-radio-button>
 </el-radio-group>
 <div style="margin: 20px;"></div>
-<el-form :label-position="labelPosition" label-width="100px" :model="formLabelAlign">
-  <el-form-item label="Name">
+
+<el-form :label-position="labelPosition" label-width="100px" :model="formLabelAlign" :rules="alignmentRules">
+  <el-form-item label="Name" :mark-required="1">
     <el-input v-model="formLabelAlign.name"></el-input>
   </el-form-item>
-  <el-form-item label="Activity zone">
+  <el-form-item label="Activity zone" :mark-required="2">
     <el-input v-model="formLabelAlign.region"></el-input>
   </el-form-item>
-  <el-form-item label="Activity form">
+  <el-form-item label="Activity form" :mark-required="0">
     <el-input v-model="formLabelAlign.type"></el-input>
   </el-form-item>
 </el-form>
@@ -385,7 +391,12 @@ Depending on your design, there are several different ways to align your label e
           name: '',
           region: '',
           type: ''
-        }
+        },
+        alignmentRules: {
+          name: [
+            { required: true, message: 'Please input Activity name', trigger: 'blur' },
+          ],
+        },
       };
     }
   }
@@ -760,6 +771,7 @@ Form component allows you to verify your data, helping you find and correct erro
 | label | label | string | — | — |
 | label-width | width of label, e.g. '50px' | string | — | — |
 | required | whether the field is required or not, will be determined by validation rules if omitted | string |  — | false |
+| requiredMark | whether mark the field required with a * | Number|  — | false |
 | rules | validation rules of form | object | — | — |
 | error | field error message, set its value and the field will validate error and show this message immediately | string | — | — |
 | show-message  | whether to show the error message | boolean | — | true |
