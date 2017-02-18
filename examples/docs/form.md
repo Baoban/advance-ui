@@ -421,7 +421,7 @@ Form component allows you to verify your data, helping you find and correct erro
       <el-option label="Zone two" value="beijing"></el-option>
     </el-select>
   </el-form-item>
-  <el-form-item label="Activity time" required>
+  <el-form-item label="Activity time">
     <el-col :span="11">
       <el-form-item prop="date1">
         <el-date-picker type="date" placeholder="Pick a date" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
@@ -770,7 +770,6 @@ Form component allows you to verify your data, helping you find and correct erro
 | prop | a key of `model` | string | keys of model that passed to `form` |
 | label | label | string | — | — |
 | label-width | width of label, e.g. '50px' | string | — | — |
-| required | whether the field is required or not, will be determined by validation rules if omitted | string |  — | false |
 | requiredMark | whether mark the field required with a * | Number|  — | false |
 | rules | validation rules of form | object | — | — |
 | error | field error message, set its value and the field will validate error and show this message immediately | string | — | — |

@@ -2,8 +2,8 @@
   <div class="el-form-item" :class="{
     'is-error': validateState === 'error',
     'is-validating': validateState === 'validating',
-    'is-required-mark': requiredMark && (isRequired || required),
-    'is-not-required-mark': requiredMark && (!isRequired && !required),
+    'is-required-mark': requiredMark && isRequired,
+    'is-not-required-mark': requiredMark && !isRequired,
   }">
     <label :for="prop" class="el-form-item__label" v-bind:style="labelStyle" v-if="label">
       {{label + form.labelSuffix}}
