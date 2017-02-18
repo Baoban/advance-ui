@@ -372,13 +372,13 @@ Depending on your design, there are several different ways to align your label e
 <div style="margin: 20px;"></div>
 
 <el-form :label-position="labelPosition" label-width="100px" :model="formLabelAlign" :rules="alignmentRules">
-  <el-form-item label="Name" :mark-required="1">
+  <el-form-item label="Name">
     <el-input v-model="formLabelAlign.name"></el-input>
   </el-form-item>
-  <el-form-item label="Activity zone" :mark-required="2">
+  <el-form-item label="Activity zone">
     <el-input v-model="formLabelAlign.region"></el-input>
   </el-form-item>
-  <el-form-item label="Activity form" :mark-required="0">
+  <el-form-item label="Activity form" :required-mark="false">
     <el-input v-model="formLabelAlign.type"></el-input>
   </el-form-item>
 </el-form>
