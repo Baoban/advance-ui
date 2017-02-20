@@ -39,15 +39,6 @@
       defaultOpeneds(value) {
         this.openedMenus = value;
       },
-      '$route': {
-        immediate: true,
-        handler(value) {
-          if (this.router) {
-            this.activedIndex = value.path;
-            this.initOpenedMenu();
-          }
-        }
-      }
     },
     methods: {
       addItem(item) {
@@ -90,12 +81,9 @@
         }
       },
       handleItemClick(item) {
-        let { index, indexPath } = item;
-        this.$emit('select', index, indexPath, item);
+        this.activedIndex = item.index;
         if (this.router) {
           this.routeToItem(item);
-        } else {
-          this.activedIndex = item.index;
         }
       },
       initOpenedMenu() {
@@ -108,9 +96,8 @@
         });
       },
       routeToItem(item) {
-        let route = item.route || item.index;
         try {
-          this.$router.push(route);
+          this.$router.push(item.index);
         } catch (e) {
           console.error(e);
         }

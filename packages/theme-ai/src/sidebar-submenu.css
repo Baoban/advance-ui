@@ -35,12 +35,12 @@
       font-size: 12px;
     }
     @when active {
-      .el-submenu__title {
+      @e title {
         border-bottom-color: var(--color-primary);
       }
     }
     @when opened {
-      > .el-submenu__title .el-submenu__icon-arrow {
+      > .el-sidebar-submenu__title .el-sidebar-submenu__icon-arrow {
         transform: rotateZ(180deg);
       }
     }

@@ -60,38 +60,38 @@ Sidebar with sub-menus.
   
   <el-col :span="8">
     <h5>Without icons</h5>
-    <el-menu default-active="2" class="el-menu-vertical-demo">
-      <el-submenu index="1">
+    <el-sidebar default-active="2" class="el-menu-vertical-demo">
+      <el-sidebar-submenu index="1">
         <template slot="title">Navigator One</template>
-        <el-menu-item-group title="Group One">
-          <el-menu-item index="1-1">item one</el-menu-item>
-          <el-menu-item index="1-2">item two</el-menu-item>
-        </el-menu-item-group>
-        <el-menu-item-group title="Group Two">
-          <el-menu-item index="1-3">item three</el-menu-item>
-        </el-menu-item-group>
-        <el-submenu index="1-4">
+        <el-sidebar-group title="Group One">
+          <el-sidebar-item index="1-1">item one</el-sidebar-item>
+          <el-sidebar-item index="1-2">item two</el-sidebar-item>
+        </el-sidebar-group>
+        <el-sidebar-group title="Group Two">
+          <el-sidebar-item index="1-3">item three</el-sidebar-item>
+        </el-sidebar-group>
+        <el-sidebar-submenu index="1-4">
           <template slot="title">item four</template>
-          <el-menu-item index="1-4-1">item one</el-menu-item>
-        </el-submenu>
-      </el-submenu>
-      <el-menu-item index="2">Navigator Two</el-menu-item>
-      <el-menu-item index="3">Navigator Three</el-menu-item>
-    </el-menu>
+          <el-sidebar-item index="1-4-1">item one</el-sidebar-item>
+        </el-sidebar-submenu>
+      </el-sidebar-submenu>
+      <el-sidebar-item index="2">Navigator Two</el-sidebar-item>
+      <el-sidebar-item index="3">Navigator Three</el-sidebar-item>
+    </el-sidebar>
   </el-col>
   
   <el-col :span="8">
     <h5>Groups</h5>
-    <el-menu mode="vertical" default-active="1" class="el-menu-vertical-demo">
-      <el-menu-item-group title="Group One">
-        <el-menu-item index="1"><i class="el-icon-message"></i>Navigator One</el-menu-item>
-        <el-menu-item index="2"><i class="el-icon-message"></i>Navigator Two</el-menu-item>
-      </el-menu-item-group>
-      <el-menu-item-group title="Group Two">
-        <el-menu-item index="3"><i class="el-icon-message"></i>Navigator Three</el-menu-item>
-        <el-menu-item index="4"><i class="el-icon-message"></i>Navigator Four</el-menu-item>
-      </el-menu-item-group>
-    </el-menu>
+    <el-sidebar mode="vertical" default-active="1" class="el-menu-vertical-demo">
+      <el-sidebar-group title="Group One">
+        <el-sidebar-item index="1"><i class="el-icon-message"></i>Navigator One</el-sidebar-item>
+        <el-sidebar-item index="2"><i class="el-icon-message"></i>Navigator Two</el-sidebar-item>
+      </el-sidebar-group>
+      <el-sidebar-group title="Group Two">
+        <el-sidebar-item index="3"><i class="el-icon-message"></i>Navigator Three</el-sidebar-item>
+        <el-sidebar-item index="4"><i class="el-icon-message"></i>Navigator Four</el-sidebar-item>
+      </el-sidebar-group>
+    </el-sidebar>
   </el-col>
 </el-row>
 ```

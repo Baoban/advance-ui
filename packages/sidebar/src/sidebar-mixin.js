@@ -23,10 +23,7 @@ module.exports = {
     },
     parentMenu() {
       let parent = this.$parent;
-      while (
-        parent &&
-        ['ElSidebar', 'ElSidebarSubmenu'].indexOf(parent.$options.componentName) === -1
-      ) {
+      while (parent && ['ElSidebar', 'ElSidebarSubmenu'].indexOf(parent.$options.componentName) === -1) {
         parent = parent.$parent;
       }
       return parent;

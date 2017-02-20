@@ -21,10 +21,6 @@
         type: String,
         required: true
       },
-      route: {
-        type: Object,
-        required: false
-      },
       disabled: {
         type: Boolean,
         required: false
