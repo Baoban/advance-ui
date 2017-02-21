@@ -6,7 +6,7 @@ process.on('exit', () => {
 });
 
 if (!process.argv[2]) {
-  console.error('[组件名]必填.');
+  console.error('component name is required');
   process.exit(1);
 }
 
@@ -53,18 +53,10 @@ module.exports = cooking.resolve();`
   {
     filename: 'package.json',
     content: `{
-  "name": "element-${componentname}",
+  "name": "advance-${componentname}",
   "version": "0.0.0",
-  "description": "A ${componentname} component for Vue.js.",
-  "keywords": [
-    "element",
-    "vue",
-    "component"
-  ],
+  "private": true,
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/${componentname}",
-  "author": "elemefe",
-  "license": "MIT",
   "dependencies": {}
 }`
   },
@@ -81,12 +73,8 @@ export default {
 </script>`
   },
   {
-    filename: path.join('../../examples/docs/zh-CN', `${componentname}.md`),
+    filename: path.join('../../examples/docs', `${componentname}.md`),
     content: `## ${chineseName}`
-  },
-  {
-    filename: path.join('../../examples/docs/en-us', `${componentname}.md`),
-    content: `## ${componentname}`
   },
   {
     filename: path.join('../../test/unit/specs', `${componentname}.spec.js`),
@@ -122,21 +110,17 @@ fileSave(path.join(__dirname, '../../components.json'))
 // 创建 package
 Files.forEach(file => {
   fileSave(path.join(PackagePath, file.filename))
-  .write(file.content, 'utf8')
-  .end('\n');
+    .write(file.content, 'utf8')
+    .end('\n');
 });
 
 // 添加到 nav.config.json
 const navConfigFile = require('../../examples/nav.config.json');
 
-Object.keys(navConfigFile).forEach(lang => {
-  let groups = navConfigFile[lang][2].groups;
-  groups[groups.length - 1].list.push({
-    path: `/${componentname}`,
-    title: lang === 'zh-CN' && componentname !== chineseName
-        ? `${ComponentName} ${chineseName}`
-        : ComponentName
-  });
+let groups = navConfigFile[0].groups;
+groups[groups.length - 1].list.push({
+  path: `/${componentname}`,
+  title: ComponentName,
 });
 
 fileSave(path.join(__dirname, '../../examples/nav.config.json'))

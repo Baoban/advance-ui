@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "./common/var/base.css";
+@import "./common/var/sidebar.css";
+
+@component-namespace el {
+  @b sidebar {
+    border-radius: 2px;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding-left: 0;
+    background-color: var(--color-primary);
+    @utils-clearfix ;
+
+    & li {
+      list-style: none;
+    }
+  }
+}

@@ -58,5 +58,9 @@
   "scrollbar": "./packages/scrollbar/index.js",
   "carousel-item": "./packages/carousel-item/index.js",
   "collapse": "./packages/collapse/index.js",
-  "collapse-item": "./packages/collapse-item/index.js"
+  "collapse-item": "./packages/collapse-item/index.js",
+  "sidebar": "./packages/sidebar/index.js",
+  "sidebar-item": "./packages/sidebar-item/index.js",
+  "sidebar-group": "./packages/sidebar-group/index.js",
+  "sidebar-submenu": "./packages/sidebar-submenu/index.js"
 }

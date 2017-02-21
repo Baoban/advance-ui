@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import "./common/var/base.css";
+@import "./common/var/sidebar.css";
+
+@component-namespace el {
+  @b sidebar-item-group {
+    > ul {
+      padding: 0;
+    }
+    @e title {
+      padding-top: 15px;
+      line-height: normal;
+      font-size: 14px;
+      padding-left: 20px;
+      color: var(--color-black);
+    }
+  }
+}

@@ -1,10 +1,10 @@
-var fs = require('fs')
-var path = require('path')
-var Components = require('../../components.json')
-var themes = [
+const fs = require('fs')
+const path = require('path')
+const Components = require('../../components.json')
+const themes = [
   'theme-ai'
 ]
-var basepath = path.resolve(__dirname, '../../packages/')
+const basepath = path.resolve(__dirname, '../../packages/')
 
 function fileExists (filePath) {
   try {
@@ -15,12 +15,15 @@ function fileExists (filePath) {
 }
 
 themes.forEach((theme) => {
+  var indexContent = '@import "./base.css";\n'
   Object.keys(Components).forEach(function (key) {
-    var fileName = key + '.css'
-    var filePath = path.resolve(basepath, theme, 'src', fileName)
+    const fileName = key + '.css'
+    indexContent += `@import "./${fileName}";\n`
+    const filePath = path.resolve(basepath, theme, 'src', fileName)
     if (!fileExists(filePath)) {
       fs.writeFileSync(filePath, '', 'utf8')
-      console.log(theme, ' 创建遗漏的 ', fileName, ' 文件')
+      console.log(theme, ' create new: ', fileName)
     }
   })
+  fs.writeFileSync(path.resolve(basepath, theme, 'src', 'index.css'), indexContent)
 })

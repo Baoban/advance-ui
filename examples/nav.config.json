@@ -160,6 +160,10 @@
           {
             "path": "/steps",
             "title": "Steps"
+          },
+          {
+            "path": "/sidebar",
+            "title": "Sidebar"
           }
         ]
       },
