@@ -49,7 +49,7 @@
       },
       addSubmenu(item) {
         this.$set(this.submenus, item.index, item);
-      },
+
       removeSubmenu(item) {
         delete this.submenus[item.index];
       },
