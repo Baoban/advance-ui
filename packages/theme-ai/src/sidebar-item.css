@@ -8,23 +8,15 @@
 
     & [class^="el-icon-"] {
       vertical-align: baseline;
-      margin-right: 10px;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
+      margin-right: 15px;
     }
 
     &:hover {
-      background-color: var(--color-black);
+      background-color: var(--color-item-hover);
     }
 
     @when active {
-      color: var(--color-white);
+      color: var(--color-primary);
     }
   }
 }

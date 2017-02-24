@@ -133,6 +133,7 @@
 
 <style lang="postcss">
   .demo-block {
+    background: #f3f3f3;
     border: solid 1px #eaeefb;
     border-radius: 4px;
     transition: .2s;
