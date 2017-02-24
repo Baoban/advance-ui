@@ -5,6 +5,8 @@
 @component-namespace el {
   @b sidebar-item {
     @extend sidebar-item;
+    border: solid 0px transparent;
+    border-left-width: 5px;
 
     & [class^="el-icon-"] {
       vertical-align: baseline;
@@ -12,11 +14,12 @@
     }
 
     &:hover {
-      background-color: var(--color-item-hover);
+      background-color: rgba(170, 170, 170, .1);
     }
 
     @when active {
-      color: var(--color-primary);
+      border-color: var(--color-primary);
+      background-color: rgba(170, 170, 170, .1);
     }
   }
 }

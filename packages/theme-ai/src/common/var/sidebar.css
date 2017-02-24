@@ -5,8 +5,8 @@
 }
 
 @define-extend sidebar-item {
-  height: 56px;
-  line-height: 56px;
+  height: 48px;
+  line-height: 48px;
   font-size: 14px;
   color: var(--color-grey);
   cursor: pointer;
