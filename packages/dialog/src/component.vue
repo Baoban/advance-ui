@@ -8,11 +8,13 @@
         :style="style">
         <div class="el-dialog__header">
           <span class="el-dialog__title">{{title}}</span>
-          <div class="el-dialog__headerbtn">
-            <i v-if="showClose" class="el-dialog__close el-icon el-icon-close" @click='close()'></i>
+          <div class="el-dialog__close " @click='close()'>
+            <i v-if="showClose" class="el-icon el-icon-close"></i>
           </div>
         </div>
-        <div class="el-dialog__body" v-if="rendered"><slot></slot></div>
+        <div class="el-dialog__body" v-if="rendered">
+          <slot></slot>
+        </div>
         <div class="el-dialog__footer" v-if="$slots.footer">
           <slot name="footer"></slot>
         </div>
@@ -21,7 +23,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="babel">
   import Popup from 'advance-ui/src/utils/popup';
 
   export default {
@@ -103,7 +105,7 @@
         return `el-dialog--${ this.size }`;
       },
       style() {
-        return this.size === 'full' ? {} : { 'margin-bottom': '50px', 'top': this.top };
+        return this.size === 'full' ? {} : { 'margin-bottom': '50px', 'margin-top': this.top };
       }
     },
 
