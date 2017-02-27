@@ -4,7 +4,7 @@
       padding-left: 55px;
     }
     .el-menu-vertical-demo {
-      width: 200px;
+      width: 210px;
       min-height: 400px;
     }
     .line {
