@@ -105,7 +105,7 @@
         return `el-dialog--${ this.size }`;
       },
       style() {
-        return this.size === 'full' ? {} : { 'margin-bottom': '50px', 'margin-top': this.top };
+        return this.size === 'full' ? {} : { 'margin-bottom': '50px', 'top': this.top };
       }
     },
 
@@ -117,16 +117,16 @@
       },
       handleScroll(e) {
         const dialogElement = e.srcElement.childNodes[0]
-        const marginTop = parseInt(window.getComputedStyle(dialogElement).marginTop, 10)
+        const top = parseInt(window.getComputedStyle(dialogElement).top, 10)
+        const gapY = top - e.srcElement.scrollTop
         const closeElement = e.srcElement.getElementsByClassName('el-dialog__close')[0]
-        if (marginTop > e.srcElement.scrollTop) {
+        console.log(gapY)
+        if (gapY > 0) {
           // in viewport
-          closeElement.style.position = 'absolute'
-          closeElement.style.right = '-50px'
+          closeElement.style.top = '0px'
         } else {
           // out of viewport
-          closeElement.style.position = 'fixed'
-          closeElement.style.right = `${window.innerWidth - dialogElement.offsetLeft - dialogElement.clientWidth - 50}px`
+          closeElement.style.top = `${Math.abs(gapY)}px`
         }
       },
     },
