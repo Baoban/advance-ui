@@ -17,7 +17,7 @@
   --radio-icon-color: var(--color-white);
 
   --radio-disabled-input-border-color: #cccccc;
-  --radio-disabled-input-fill: #cccccc;
+  --radio-disabled-input-fill: #e9e9e9;
   --radio-disabled-icon-color: #cccccc;
 
   --radio-disabled-checked-input-fill: #cccccc;
