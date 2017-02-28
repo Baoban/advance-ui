@@ -89,11 +89,13 @@
       initOpenedMenu() {
         const index = this.activedIndex;
         const activeItem = this.items[index];
-        const indexPath = activeItem.indexPath;
-        indexPath.forEach(index => {
-          let submenu = this.submenus[index];
-          submenu && this.openMenu(index, submenu.indexPath);
-        });
+        if (activeItem) {
+          const indexPath = activeItem.indexPath;
+          indexPath.forEach(index => {
+            let submenu = this.submenus[index];
+            submenu && this.openMenu(index, submenu.indexPath);
+          });
+        }
       },
       routeToItem(item) {
         try {
