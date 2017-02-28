@@ -58,7 +58,7 @@
       prop: String,
       requiredMark: {
         type: Boolean,
-        default: true,
+        default: false,
       },
       rules: [Object, Array],
       error: String,
