@@ -1,10 +1,10 @@
 <style>
-  .demo-box.demo-menu {
+  .demo-box.demo-sidebar {
     .el-menu-demo {
       padding-left: 55px;
     }
     .el-menu-vertical-demo {
-      width: 200px;
+      width: 210px;
       min-height: 400px;
     }
     .line {
@@ -19,7 +19,7 @@
     }
     .tac {
       text-align: center;
-
+      
       .el-menu-vertical-demo {
         display: inline-block;
         text-align: left;
@@ -39,22 +39,9 @@ Sidebar with sub-menus.
   <el-col :span="8">
     <h5>With icons</h5>
     <el-sidebar default-active="2" class="el-menu-vertical-demo">
-    <el-sidebar-submenu index="1">
-        <template slot="title"><i class="el-icon-message"></i>Navigator One</template>
-        <el-sidebar-group title="Group One">
-          <el-sidebar-item index="1-1">item one</el-sidebar-item>
-          <el-sidebar-item index="1-2">item one</el-sidebar-item>
-        </el-sidebar-group>
-        <el-sidebar-group title="Group Two">
-          <el-sidebar-item index="1-3">item three</el-sidebar-item>
-        </el-sidebar-group>
-        <el-sidebar-submenu index="1-4">
-          <template slot="title">item four</template>
-          <el-sidebar-item index="1-4-1">item one</el-sidebar-item>
-        </el-sidebar-submenu>
-      </el-sidebar-submenu>
-      <el-sidebar-item index="2"><i class="el-icon-menu"></i>Navigator Two</el-menu-item>
-      <el-sidebar-item index="3"><i class="el-icon-setting"></i>Navigator Three</el-menu-item>
+      <el-sidebar-item index="1"><i class="el-icon-menu"></i>Navigator One</el-sidebar-item>
+      <el-sidebar-item index="2"><i class="el-icon-menu"></i>Navigator Two</el-sidebar-item>
+      <el-sidebar-item index="3"><i class="el-icon-setting"></i>Navigator Three</el-sidebar-item>
     </el-sidebar>
   </el-col>
   

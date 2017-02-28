@@ -5,11 +5,11 @@
 :root {
   --dialog-background-color: var(--color-black);
   --dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
   --dialog-tiny-width: 30%;
-  --dialog-small-width: 50%;
+  --dialog-small-width: 60%;
   --dialog-large-width: 90%;
-  --dialog-close-color: var(--color-black);
-  --dialog-close-hover-color: var(--color-primary);
+
   --dialog-title-font-size: 16px;
   --dialog-font-size: 14px;
 }
@@ -17,13 +17,12 @@
 @component-namespace el {
 
   @b dialog {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     background: var(--color-white);
     border-radius: var(--border-radius-base);
     box-shadow: var(--dialog-box-shadow);
     box-sizing: border-box;
+    margin: auto;
 
     @modifier tiny {
       width: var(--dialog-tiny-width);
@@ -48,19 +47,11 @@
       position: fixed 0 0 0 0;
       overflow: auto;
       margin: 0;
+      text-align: center;
     }
 
     @e header {
       padding: 20px 20px 0;
-    }
-
-    @e close {
-      cursor: pointer;
-      color: var(--dialog-close-color);
-
-      &:hover {
-        color: var(--dialog-close-hover-color);
-      }
     }
 
     @e title {
@@ -76,8 +67,27 @@
       font-size: var(--dialog-font-size);
     }
 
-    @e headerbtn {
-      float: right;
+    @e close {
+      position: absolute;
+      top: 0px;
+      right: -50px;
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      background: white;
+      text-align: center;
+      cursor: pointer;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.7, 0.7);
+        color: var(--color-grey);
+
+        &:hover {
+          color: var(--color-grey);
+        }
+      }
     }
 
     @e footer {
