@@ -29,6 +29,12 @@
       };
     },
     watch: {
+      '$route'(to, from) {
+        if (this.router === false) {
+          return
+        }
+        this.activedIndex = to.path
+      },
       defaultActive(value) {
         const item = this.items[value];
         if (!item) return;
