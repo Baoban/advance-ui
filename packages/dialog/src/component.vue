@@ -1,6 +1,6 @@
 <template>
   <transition name="dialog-fade">
-    <div class="el-dialog__wrapper" v-show="visible" @click.self="handleWrapperClick">
+    <div class="el-dialog__wrapper" v-show="visible" @click.self="handleWrapperClick" v-on:scroll="handleScroll">
       <div
         class="el-dialog"
         :class="[sizeClass, customClass]"
@@ -8,7 +8,7 @@
         :style="style">
         <div class="el-dialog__header">
           <span class="el-dialog__title">{{title}}</span>
-          <div class="el-dialog__close " @click='close()'>
+          <div class="el-dialog__close" @click='close()'>
             <i v-if="showClose" class="el-icon el-icon-close"></i>
           </div>
         </div>
@@ -79,7 +79,7 @@
     },
     data() {
       return {
-        visible: false
+        visible: false,
       };
     },
 
@@ -114,14 +114,27 @@
         if (this.closeOnClickModal) {
           this.close();
         }
-      }
+      },
+      handleScroll(e) {
+        const dialogElement = e.srcElement.childNodes[0]
+        const marginTop = parseInt(window.getComputedStyle(dialogElement).marginTop, 10)
+        const closeElement = e.srcElement.getElementsByClassName('el-dialog__close')[0]
+        if (marginTop > e.srcElement.scrollTop) {
+          // in viewport
+          closeElement.style.position = 'absolute'
+          closeElement.style.right = '-50px'
+        } else {
+          // out of viewport
+          closeElement.style.position = 'fixed'
+          closeElement.style.right = `${window.innerWidth - dialogElement.offsetLeft - dialogElement.clientWidth - 50}px`
+        }
+      },
     },
-
     mounted() {
       if (this.value) {
         this.rendered = true;
         this.open();
       }
-    }
+    },
   };
 </script>
