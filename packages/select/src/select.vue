@@ -643,7 +643,7 @@
       });
     },
 
-    destroyed() {
+    beforeDestroy() {
       if (this.resetInputWidth) removeResizeListener(this.$el, this.resetInputWidth);
     }
   };
