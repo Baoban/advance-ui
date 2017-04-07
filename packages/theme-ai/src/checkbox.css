@@ -98,6 +98,13 @@
           }
         }
       }
+
+      @when rounded {
+        .el-checkbox__inner {
+          border-radius: 8px;
+        }
+      }
+
       @when focus {
         .el-checkbox__inner {
           border-color: var(--checkbox-input-border-color-hover);

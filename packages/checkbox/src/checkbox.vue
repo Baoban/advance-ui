@@ -1,11 +1,12 @@
 <template>
   <label class="el-checkbox">
     <span class="el-checkbox__input"
-      :class="{
+          :class="{
         'is-disabled': disabled,
         'is-checked': isChecked,
         'is-indeterminate': indeterminate,
-        'is-focus': focus
+        'is-focus': focus,
+        'is-rounded': rounded,
       }"
     >
       <span class="el-checkbox__inner"></span>
@@ -61,7 +62,7 @@
         get() {
           return this.isGroup
             ? this.store : this.value !== undefined
-            ? this.value : this.selfModel;
+              ? this.value : this.selfModel;
         },
 
         set(val) {
@@ -108,6 +109,7 @@
       label: {},
       indeterminate: Boolean,
       disabled: Boolean,
+      rounded: Boolean,
       checked: Boolean,
       name: String,
       trueLabel: [String, Number],

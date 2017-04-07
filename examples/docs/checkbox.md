@@ -58,6 +58,7 @@ Checkbox can be used alone to switch between two states.
 <template>
   <!-- `checked` should be true or false -->
   <el-checkbox v-model="checked">Option</el-checkbox>
+  <el-checkbox v-model="checked" :rounded="true">Option</el-checkbox>
 </template>
 <script>
   export default {
@@ -174,6 +175,7 @@ The `indeterminate` property can help you to achieve a 'check all' effect.
 | name | native 'name' attribute | string    |      —         |     —    |
 | disabled  | if the checkbox is disabled   | boolean   |  — | false   |
 | checked  | if the checkbox is checked   | boolean   |  — | false   |
+| rounded | if the checkbox is rounded | boolean   |  — | false   |
 | indeterminate  | same as `indeterminate` in native checkbox | boolean   |  — | false   |
 
 ### Checkbox-group Events
