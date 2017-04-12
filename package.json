@@ -20,7 +20,7 @@
     "deploy:build": "npm run build:file && cooking build -c build/cooking.demo.js -p",
     "deploy": "npm run deploy:build && gh-pages -d examples/dist",
     "dist": "npm run clean && npm run build:file && npm run lint && cooking build -c build/cooking.conf.js,build/cooking.common.js,build/cooking.component.js -p && npm run build:utils && npm run build:theme",
-    "publish": "npm run dist && npm publish",
+    "prepublish": "npm run dist",
     "lint": "eslint src/**/* test/**/* packages/**/*.{js,vue} build/**/* --quiet",
     "test": "npm run lint && cross-env CI_ENV=/dev/ karma start test/unit/karma.conf.js --single-run",
     "test:watch": "karma start test/unit/karma.conf.js"
