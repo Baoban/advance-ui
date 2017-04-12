@@ -2,7 +2,7 @@
   export default {
     methods: {
       open() {
-        this.$alert('This is a message', 'Title', {
+        this.$alert('This is <br> a message', 'Title', {
           confirmButtonText: 'OK',
           callback: action => {
             this.$message({
