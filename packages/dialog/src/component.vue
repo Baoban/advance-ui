@@ -120,7 +120,6 @@
         const top = parseInt(window.getComputedStyle(dialogElement).top, 10)
         const gapY = top - e.srcElement.scrollTop
         const closeElement = e.srcElement.getElementsByClassName('el-dialog__close')[0]
-        console.log(gapY)
         if (gapY > 0) {
           // in viewport
           closeElement.style.top = '0px'
