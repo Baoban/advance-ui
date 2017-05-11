@@ -21,17 +21,18 @@
             },
           }, this.$slots.default)
         }
+      } else {
+        return h('div', {
+          'class': {
+            'el-tab-pane': true,
+          },
+          directives: [{
+            name: 'show',
+            value: this.active,
+            expression: 'active',
+          }],
+        }, this.$slots.default)
       }
-      return h('div', {
-        'class': {
-          'el-tab-pane': true,
-        },
-        directives: [{
-          name: 'show',
-          value: this.active,
-          expression: 'active',
-        }],
-      }, this.$slots.default)
     },
 
     data() {
