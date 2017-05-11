@@ -1,8 +1,3 @@
-<template>
-  <div class="el-tab-pane" v-show="active">
-    <slot></slot>
-  </div>
-</template>
 <script>
   module.exports = {
     name: 'ElTabPane',
@@ -10,11 +5,34 @@
     componentName: 'ElTabPane',
 
     props: {
+      method: String, // 'if' 'show'
       label: String,
       labelContent: Function,
       name: String,
       closable: Boolean,
       disabled: Boolean
+    },
+    render(h) {
+      if (this.method === 'if') {
+        if (this.active) {
+          return h('div', {
+            'class': {
+              'el-tab-pane': true,
+            },
+          }, this.$slots.default)
+        }
+      } else {
+        return h('div', {
+          'class': {
+            'el-tab-pane': true,
+          },
+          directives: [{
+            name: 'show',
+            value: this.active,
+            expression: 'active',
+          }],
+        }, this.$slots.default)
+      }
     },
 
     data() {
