@@ -18,8 +18,9 @@
     }
 
     @when active {
-      border-color: var(--color-primary);
-      background-color: rgba(170, 170, 170, .1);
+      color: var(--color-primary);
+      /*border-color: var(--color-primary);*/
+      /*background-color: rgba(170, 170, 170, .1);*/
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "advance-ui",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "description": "A Component Library for advance.ai",
   "main": "lib/advance-ui.common.js",
   "files": [
